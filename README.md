@@ -1,3 +1,9 @@
+## Basic Programming Concepts
+
+Following are some of the important general programming concepts. 
+
+
+
 ### What's ASCII?
 ### What's Unicode?
 ### What's utf-8
