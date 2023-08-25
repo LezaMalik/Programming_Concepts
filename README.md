@@ -96,12 +96,20 @@ A Pull Request (PR) is a request to merge code changes from one branch (often a 
 ----------------------------------------------
 
 ### 18. Git pull/push/add/commit/checkout/branch/clone
-git pull: Fetches changes from a remote repository and integrates them into the current branch.
-git push: Uploads local changes to a remote repository.
-git add: Stages changes for commit.
-git commit: Records staged changes in the repository.
-git checkout: Switches between branches or commits.
-git branch: Lists, creates, or deletes branches.
-git clone: Creates a local copy of a remote repository.
+
+* *git pull:* Fetches changes from a remote repository and integrates them into the current branch.
+  
+* *git push:* Uploads local changes to a remote repository.
+  
+* *git add:* Stages changes for commit.
+  
+* *git commit:* Records staged changes in the repository.
+  
+* *git checkout:* Switches between branches or commits.
+  
+* *git branch:* Lists, creates, or deletes branches.
+  
+* *git clone:* Creates a local copy of a remote repository.
+
 
 ----------------------------------------------
