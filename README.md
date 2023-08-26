@@ -16,6 +16,9 @@ ASCII characters may be represented in the following ways:
 * as decimal numbers from 0 to 127; or
 * as 7-bit or 8-bit binary
 
+Following is the ASCII Table: 
+
+![ASCII picture](./data/ASCII.JPG)
 
 ----------------------------------------------
 
