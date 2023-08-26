@@ -40,9 +40,9 @@ Spatial efficiency is a key advantage of UTF-8 encoding. If instead every Unicod
 
 Another benefit of UTF-8 encoding is its backward compatibility with ASCII. The first 128 characters in the Unicode library match those in the ASCII library, and UTF-8 translates these 128 Unicode characters into the same binary strings as ASCII. As a result, UTF-8 can take a text file formatted by ASCII and convert it to human-readable text without issue.
 
-Following is the utf-8 table: 
 
-![utf-8 picture](./data/utf-8.png)
+
+![utf picture](./data/utf.png)
 
 ----------------------------------------------
 
