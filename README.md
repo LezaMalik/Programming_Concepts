@@ -27,6 +27,9 @@ Unicode is a universal character encoding standard that encompasses characters f
 
 Unicode provides a unique number for every character including punctuation marks, mathematical symbols, technical symbols, arrows, and characters making up non-Latin alphabets such as Thai, Chinese, or Arabic script. Since its inception, Unicode has been adopted by all modern software providers, allowing the transportation of data through devices, applications, and platforms without corruption. It is now used in all major operating systems, browsers, search engines, laptops, smartphones, and across the internet.
 
+Following is the UNICODE Table: 
+
+![unicode picture](./data/unicode.png)
 
 ----------------------------------------------
 
