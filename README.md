@@ -42,7 +42,7 @@ Another benefit of UTF-8 encoding is its backward compatibility with ASCII. The 
 
 
 
-![utf picture](./data/utf.png)
+![utf picture](./data/utf.PNG)
 
 ----------------------------------------------
 
