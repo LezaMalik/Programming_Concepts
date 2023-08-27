@@ -114,6 +114,14 @@ Modern hardware architecture is characterized by its focus on performance optimi
 ### 6. What's the max RAM in 32-bit and 64 bit? and why?
 A 32-bit system can theoretically address up to 4 GB of RAM because memory addresses are 32 bits wide. A 64-bit system can address much more memory (terabytes or more) due to its larger memory address space, which enhances performance and supports memory-intensive applications.
 
+* 32-bit Systems:
+   In a 32-bit system, the processor can generate 2^32 (4,294,967,296) unique memory addresses. This theoretically allows for addressing up to 4 GB (gigabytes) of memory. However, due to memory-mapped I/O and other system-related uses of memory addresses, the actual usable memory for applications is usually limited to around 3 to 3.5 GB, depending on the specific operating system and hardware configuration.
+
+* 64-bit Systems:
+   In a 64-bit system, the processor can generate 2^64 (18,446,744,073,709,551,616) unique memory addresses. This provides an astronomical theoretical limit of 18.4 million TB (terabytes) of addressable memory. This large address space is far beyond what is currently practical or affordable in consumer systems. However, 64-bit systems can effectively utilize much more RAM than 32-bit systems. Common operating systems like Windows, macOS, and Linux are capable of supporting several terabytes of RAM on modern hardware.
+
+The reason 64-bit systems can address significantly more memory than 32-bit systems lies in the increased size of memory addresses. A 64-bit memory address can represent a much larger range of memory locations compared to a 32-bit address. This increase in address space allows for larger amounts of RAM to be used by applications and the operating system.
+
 ----------------------------------------------
 
 ### 7. How many bits in a byte
