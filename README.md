@@ -361,22 +361,27 @@ Pull Requests provide a structured and controlled way for teams to collaborate o
 
 * **git add:**
  git add stages changes in your working directory to be committed. It prepares the changes for the next commit.
+
 For example, git add filename stages changes in the specified file for commit.
 
 * **git commit:**
  git commit creates a snapshot of the staged changes and adds a commit message to describe the changes made in the commit.
+
 For example, git commit -m "Add new feature" commits the staged changes with the given message.
 
 * **git checkout:**
  git checkout allows you to switch between branches or commits in your Git repository. You can also use it to create new branches.
+
 For example, git checkout branchname switches to the specified branch.
 
 * **git branch:**
  git branch lists all the branches in your repository. It can also be used to create new branches.
+
 For example, git branch newbranch creates a new branch named "newbranch."
 
 * **git clone:**
  git clone is used to create a copy of a remote repository on your local machine.
+
 For example, git clone https://github.com/username/repository.git clones the repository from GitHub.
 
 ----------------------------------------------
