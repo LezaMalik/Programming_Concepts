@@ -267,8 +267,12 @@ Here are some key concepts and features of Git:
 
 ----------------------------------------------
 ### 16. Explain GIT flow with diagram (master/dev/feature/release/)
-
 In the Git Flow branching model, several types of branches are used to manage the development, testing, and release processes. Each type of branch serves a specific purpose in organizing and structuring the workflow. Here's an explanation of the main branch types:
+
+
+![gitflow picture](./data/gitflow.png)
+
+
 
 * **Master Branch:**
   The master branch is the primary branch that represents the production-ready codebase.
