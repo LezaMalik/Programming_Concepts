@@ -208,7 +208,11 @@ Here are some key concepts in XML:
 ----------------------------------------------
 
 ### 13. What is CSV? What is header? how does escape work?
-CSV is a text-based format for tabular data. It uses commas to separate values in columns. The first row often contains headers that label the columns. Special characters within values are escaped using techniques like enclosing in double quotes.
+CSV stands for "Comma-Separated Values." It is a simple and widely used file format for storing tabular data, such as spreadsheets and databases. In a CSV file, each line typically represents a row of data, and the values within each row are separated by commas. CSV files are plain text files and can be easily opened and edited in various applications, including text editors and spreadsheet software. Special characters within values are escaped using techniques like enclosing in double quotes.
+
+* Header: The header in a CSV file is the first row that contains the column names. It provides a clear label for each column, making it easier to understand the content of the data. Headers are not mandatory in CSV files, but they are common and help users understand the meaning of the data.
+
+* Escape Characters: CSV files use specific rules for handling special cases like including commas or line breaks within the data values themselves. If a value contains a comma or a line break, it needs to be properly escaped to ensure that it doesn't interfere with the CSV structure.
 
 ----------------------------------------------
 
