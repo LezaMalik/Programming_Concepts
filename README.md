@@ -270,7 +270,7 @@ Here are some key concepts and features of Git:
 In the Git Flow branching model, several types of branches are used to manage the development, testing, and release processes. Each type of branch serves a specific purpose in organizing and structuring the workflow. Here's an explanation of the main branch types:
 
 
-![gitflow picture](./data/gitflow.png)
+![git picture](./data/git.png)
 
 
 
