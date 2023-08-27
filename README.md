@@ -238,6 +238,9 @@ Key features of the Parquet file format include:
 Parquet files are commonly used in data warehousing, data lakes, and data processing pipelines where large volumes of structured data need to be stored and queried efficiently. The format's ability to balance storage efficiency with query performance makes it a popular choice in big data analytics scenarios.
 
 
+![par picture](./data/par.JPG)
+
+
 ----------------------------------------------
 
 ### 15. What is GIT? 
