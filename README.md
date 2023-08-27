@@ -177,13 +177,33 @@ Hexadecimal is often used in various computing contexts:
 ### 11. What is JSON?
 JSON (JavaScript Object Notation) is a lightweight data interchange format. It uses human-readable text to represent data objects consisting of attribute-value pairs. It's commonly used for APIs and configuration files.
 
+JSON is designed to be easy for humans to read and write, and it's also easy for machines to parse and generate. It is often used as a data format in web applications, APIs (Application Programming Interfaces), and configuration files. JSON is particularly popular in web development because it's a natural fit for JavaScript, but it's used across a wide range of programming languages.
+
+JSON data is represented as a collection of key-value pairs, where each key is a string and each value can be a string, number, boolean, object, array, or even null.
+
+Here is an example of JSON format: 
+    
+    `{
+       "name": "John Doe",
+       "age": 30,
+       "hobbies": ["reading", "swimming", "hiking"]
+      }`
+
+
 ----------------------------------------------
 
 ### 12. What is XML? What is root, element, attributes, and text?
-XML is a markup language for structuring data hierarchically. 
-The root is the top-level element, containing child elements. 
-Elements are tagged data items with optional attributes (metadata). 
-Text represents content within elements.
+XML stands for "eXtensible Markup Language." It is a markup language that is used to store and transport structured data. Like HTML, XML uses tags to define elements within a document, but unlike HTML, XML is not concerned with how the data should be displayed. Instead, XML focuses on describing the structure and meaning of the data itself.
+
+Here are some key concepts in XML:
+
+* Root: The root element is the outermost element in an XML document. It encloses all other elements and serves as the starting point for the hierarchy of elements in the document.
+
+* Element: An element is a fundamental building block of XML documents. Elements are enclosed within start tags (<element>) and end tags (</element>). Elements can contain other elements, text, or both. Elements can also have attributes.
+
+* Attributes: Attributes are additional information associated with an element. They are specified within the start tag of an element and consist of a name and a value. Attributes provide extra metadata about an element.
+
+* Text: Text refers to the content enclosed within an element. This can include plain text, numbers, or other data that the element represents. Text content is placed between the start and end tags of an element.
 
 ----------------------------------------------
 
