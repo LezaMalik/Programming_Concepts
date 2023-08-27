@@ -241,10 +241,72 @@ Parquet files are commonly used in data warehousing, data lakes, and data proces
 ----------------------------------------------
 
 ### 15. What is GIT? 
-Git is a distributed version control system for tracking changes in source code. It allows multiple developers to collaborate on a project, manage versions, and maintain a history of changes.
+Git is a distributed version control system (VCS) that is widely used for tracking changes in source code during software development. It was created by Linus Torvalds in 2005 and has since become one of the most popular and powerful tools for managing codebase history, collaborating on software projects, and coordinating work among teams of developers.
+
+Here are some key concepts and features of Git:
+
+* Version Control System: Git allows developers to track changes to their codebase over time. It maintains a complete history of all changes, which helps developers understand when and why specific changes were made.
+
+* Distributed: Unlike centralized version control systems, Git is distributed. Each developer has their own local copy of the entire repository, including the full history. This allows for offline work, faster operations, and resilience against server failures.
+
+* Commits: In Git, a commit is a snapshot of the codebase at a particular point in time. It includes changes to files and a message explaining why the changes were made.
+
+* Branches: Developers can create branches to work on new features, bug fixes, or experiments without affecting the main codebase. Branches allow for parallel development and isolation of changes.
+
+* Merging and Pull Requests: Once changes in a branch are complete, they can be merged back into the main branch. Pull requests (or merge requests) provide a way for developers to propose changes for review before merging them.
+
+* Remote Repositories: Git supports remote repositories, which can be hosted on platforms like GitHub, GitLab, or Bitbucket. These repositories serve as central hubs for sharing code and collaborating with others.
+
+* Collaboration: Git facilitates collaboration among multiple developers by allowing them to work on different branches and merge their changes seamlessly.
+
+* Staging Area: Git introduces a staging area (also called an index) that allows developers to select and prepare specific changes for commit, providing fine-grained control over what gets recorded in a commit.
+
+* History Tracking: Git maintains a detailed history of changes, including who made each change, when it was made, and why. This history helps with debugging, auditing, and understanding the evolution of the codebase.
+
+* Tags: Git allows developers to create tags to mark specific points in history, such as releases or milestones.
 
 ----------------------------------------------
 ### 16. Explain GIT flow with diagram (master/dev/feature/release/)
+
+In the Git Flow branching model, several types of branches are used to manage the development, testing, and release processes. Each type of branch serves a specific purpose in organizing and structuring the workflow. Here's an explanation of the main branch types:
+
+* **Master Branch:**
+  The master branch is the primary branch that represents the production-ready codebase.
+It contains the stable and tested version of the software.
+Direct commits to the master branch are usually reserved for tagging new releases.
+This branch is typically the starting point for creating other branches, such as release or hotfix branches.
+
+
+* **Develop Branch:**
+  The develop branch is an integration branch where most of the ongoing development work takes place.
+It's used for features, bug fixes, and other development tasks.
+Feature branches are merged into the develop branch once their development is complete and tested.
+The develop branch should always be in a state where the code is ready for testing.
+
+
+* **Feature Branches:**
+  Feature branches are used for developing new features or enhancements.
+Each feature is developed in its own isolated branch, typically branched off from develop.
+Feature branches allow developers to work on features independently without disrupting ongoing development.
+Once a feature is complete and tested, it is merged back into the develop branch.
+
+
+* **Release Branches:**
+  A release branch is created when the code in the develop branch is ready for release.
+The purpose of the release branch is to prepare the code for deployment by performing final testing, bug fixes, and version number updates.
+Any last-minute changes or improvements for the upcoming release are made in this branch.
+Once the release is considered stable, it is merged into both master (for deployment) and develop.
+
+
+* **Hotfix Branches:**
+  Hotfix branches are used to address critical bugs or issues in the production code (master branch).
+They allow for quick fixes to be developed and tested without disrupting ongoing development in the develop branch.
+A hotfix branch is created from master, and the fix is implemented and tested.
+Once the fix is validated, it's merged back into both master (for immediate deployment) and develop (to include the fix in future releases).
+
+
+Each of these branch types serves a specific purpose in the software development and release cycle, helping to maintain a structured and organized workflow while enabling collaboration among developers and teams. The Git Flow branching model provides a clear way to manage feature development, releases, and hotfixes while ensuring code stability and efficient collaboration.
+
 ----------------------------------------------
 
 ### 17. What is PR (pull request)?
