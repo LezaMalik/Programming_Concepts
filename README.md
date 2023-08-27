@@ -384,4 +384,8 @@ Pull Requests provide a structured and controlled way for teams to collaborate o
 
     For example, git clone https://github.com/username/repository.git clones the repository from GitHub.
 
+
+![cmds picture](./data/cmds.png)
+
+
 ----------------------------------------------
