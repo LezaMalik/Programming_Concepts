@@ -109,6 +109,8 @@ Modern hardware architecture involves a CPU with multiple cores, fast RAM, vario
 
 Modern hardware architecture is characterized by its focus on performance optimization, energy efficiency, and the integration of multiple components to create powerful computing systems.
 
+![hardware picture](./data/hardware.png)
+
 ----------------------------------------------
 
 ### 6. What's the max RAM in 32-bit and 64 bit? and why?
@@ -126,6 +128,8 @@ The reason 64-bit systems can address significantly more memory than 32-bit syst
 
 ### 7. How many bits in a byte
 There are 8 bits in a byte. A bit, short for "binary digit," is the smallest unit of digital data and can have a value of either 0 or 1. A byte is a grouping of 8 bits, and it is the basic unit of storage in most computer systems. Bytes are used to represent characters, numbers, and other data in computing. For example, a byte can represent a single ASCII character, a small integer, or a piece of data.
+
+![byte picture](./data/byte.jpg)
 
 ----------------------------------------------
 
