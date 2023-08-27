@@ -314,7 +314,39 @@ Each of these branch types serves a specific purpose in the software development
 ----------------------------------------------
 
 ### 17. What is PR (pull request)?
-A Pull Request (PR) is a request to merge code changes from one branch (often a feature branch) into another branch (such as dev or master). It facilitates code review and collaboration among team members.
+A Pull Request (PR) is a feature provided by version control platforms like GitHub, GitLab, and Bitbucket that enables developers to propose changes to a codebase and have those changes reviewed by others before merging them into the main branch. Pull Requests are a critical part of collaborative development and code quality control, particularly in team-based software projects.
+
+Here's how the process of creating and using a Pull Request works:
+
+* Creating a Pull Request:
+  A developer works on a new feature, bug fix, or other code changes in a separate branch (often a feature branch) in a Git repository.
+Once the developer believes the changes are ready for review and integration, they create a Pull Request.
+
+* Details and Discussion:
+  In the Pull Request, the developer provides details about the changes, including a description of what was done, why it was done, and any relevant context.
+Other team members, reviewers, or collaborators are invited to review the changes.
+
+* Review Process:
+  Reviewers examine the code changes, provide feedback, ask questions, and suggest improvements.
+Discussions can happen directly within the Pull Request's comments, allowing for a constructive feedback loop.
+
+* Iterative Improvement:
+  The developer can address feedback by making additional commits to the same branch, which are automatically added to the Pull Request.
+Reviewers can see the new commits and continue the review process.
+
+* Code Quality and Collaboration:
+  Pull Requests allow multiple developers to collaborate on improving code quality before it's merged into the main branch.
+The review process helps catch errors, improve code readability, and ensure adherence to coding standards.
+
+* Merging:
+  Once the changes have been reviewed and approved, they can be merged into the target branch (often the main or develop branch).
+The merge can be done manually by the developer or using automated tools provided by the version control platform.
+
+* Closing the Pull Request:
+  After the changes are successfully merged, the Pull Request is closed. The related branch can be deleted if it's no longer needed.
+
+
+Pull Requests provide a structured and controlled way for teams to collaborate on code changes, maintain code quality, and ensure that the main codebase remains stable. They also provide a clear history of discussions and decisions related to code changes, which can be valuable for future reference and accountability.
 
 ----------------------------------------------
 
