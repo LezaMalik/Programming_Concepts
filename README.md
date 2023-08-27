@@ -217,7 +217,26 @@ CSV stands for "Comma-Separated Values." It is a simple and widely used file for
 ----------------------------------------------
 
 ### 14. What is Parquet?
-Parquet is a columnar storage file format designed for analytics. It stores data in columns, enabling better compression and query performance. Parquet is commonly used in big data processing frameworks like Apache Spark.
+Parquet is an open-source columnar storage file format that is commonly used in big data processing and analytics environments. It is designed to store and manage structured data in a highly efficient and optimized way. Parquet was developed as part of the Apache Arrow project and is widely used in the Hadoop ecosystem, particularly with tools like Apache Spark, Apache Hive, and Apache Impala.
+
+Key features of the Parquet file format include:
+
+* Columnar Storage: Unlike traditional row-based storage formats, Parquet stores data in a columnar format. This means that values of the same column are stored together, allowing for better compression and more efficient query processing. This columnar design is particularly well-suited for analytics workloads, where queries often involve reading a subset of columns.
+
+* Compression: Parquet employs advanced compression techniques to reduce the storage footprint of data. By storing similar values together and using efficient compression algorithms, Parquet can achieve substantial storage savings compared to row-based formats.
+
+* Predicate Pushdown: Many query engines can take advantage of predicate pushdown with Parquet files. This means that query filters are applied to the metadata of the Parquet file before reading the actual data, minimizing the amount of unnecessary data read from disk.
+
+* Schema Evolution: Parquet supports schema evolution, allowing you to modify the schema of your data over time without needing to rewrite or convert existing files. This flexibility is valuable in scenarios where data structures evolve and change.
+
+* Cross-Platform Compatibility: Parquet files can be read and written by various programming languages and big data frameworks. This makes it suitable for heterogeneous environments where different tools need to access and process the same data.
+
+* Data Type Support: Parquet supports a wide range of data types, including primitive types (integers, floats, strings, etc.), complex types (arrays, maps, structs), and user-defined types.
+
+* Performance: The columnar storage format of Parquet enhances query performance, especially for analytical queries that involve aggregations, filtering, and projections.
+
+Parquet files are commonly used in data warehousing, data lakes, and data processing pipelines where large volumes of structured data need to be stored and queried efficiently. The format's ability to balance storage efficiency with query performance makes it a popular choice in big data analytics scenarios.
+
 
 ----------------------------------------------
 
