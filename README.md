@@ -125,28 +125,48 @@ The reason 64-bit systems can address significantly more memory than 32-bit syst
 ----------------------------------------------
 
 ### 7. How many bits in a byte
-A byte consists of 8 bits.
+There are 8 bits in a byte. A bit, short for "binary digit," is the smallest unit of digital data and can have a value of either 0 or 1. A byte is a grouping of 8 bits, and it is the basic unit of storage in most computer systems. Bytes are used to represent characters, numbers, and other data in computing. For example, a byte can represent a single ASCII character, a small integer, or a piece of data.
 
 ----------------------------------------------
 
 ### 8. Write decimal 0-7 in binary
-0: 000
-1: 001
-2: 010
-3: 011
-4: 100
-5: 101
-6: 110
-7: 111
+* 0: 000
+* 1: 001
+* 2: 010
+* 3: 011
+* 4: 100
+* 5: 101
+* 6: 110
+* 7: 111
 
 ----------------------------------------------
 
 ### 9. Convert decimal to binary
 
+To convert numbers from decimal to binary, the given decimal number is divided repeatedly by 2 and the remainders are noted down till we get 0 as the final quotient. The following steps is considered as the decimal to binary formula that shows the procedure of conversion.
+
+* Step 1: Divide the given decimal number by 2 and note down the remainder.
+* Step 2: Now, divide the obtained quotient by 2, and note the remainder again.
+* Step 3: Repeat the above steps until you get 0 as the quotient.
+* Step 4: Now, write the remainders in such a way that the last remainder is written first, followed by the rest in the reverse order.
+* Step 5: This can also be understood in another way which states that the Least Significant Bit (LSB) of the binary number is at the top and the Most Significant Bit (MSB) is at the bottom. This number is the binary value of the given decimal number.
+
 ----------------------------------------------
 
 ### 10. What is hex?
 Hexadecimal (hex) is a base-16 numbering system using digits 0-9 and letters A-F. It's used to represent binary data more compactly and is often used in low-level programming and memory addressing.
+
+Hexadecimal is often used in various computing contexts:
+
+* Memory Addresses: Memory addresses in computer systems are often represented in hexadecimal. This is because each hexadecimal digit directly corresponds to 4 bits, which aligns well with the typical architecture of computers.
+
+* Color Representation: In computer graphics and web design, colors are often represented using hexadecimal values for their Red, Green, and Blue (RGB) components. For example, the color white is represented as #FFFFFF.
+
+* Programming and Debugging: Hexadecimal is used in programming and debugging to represent binary data, memory contents, and machine code instructions in a more compact and manageable form.
+
+* Character Encoding: Unicode and ASCII character codes can be represented in hexadecimal to make it easier to work with and reference specific characters.
+
+* Network Addresses: IP addresses in IPv6 are represented using hexadecimal notation
 
 ----------------------------------------------
 
