@@ -633,6 +633,19 @@ A self join is a join in which a table is joined with itself. It is often used t
 ----------------------------------------------
 
 ### 8. What is Atomicity?
+Atomicity is one of the fundamental properties in database management systems (DBMS) that ensures the integrity of transactions. It is often referred to as one of the ACID properties, where ACID stands for Atomicity, Consistency, Isolation, and Durability. These properties are critical for maintaining data reliability and consistency, especially in multi-user and concurrent database environments.
+
+Atomicity specifically refers to the concept that a transaction is treated as a single, indivisible unit of work. It implies that either all the operations within a transaction are successfully completed and committed to the database, or none of them are. In other words, a transaction is atomic if it's all or nothing.
+
+Here are the key aspects of atomicity:
+
+* Success or Failure: If a transaction executes successfully and completes all its operations, it's considered successful. However, if any part of the transaction fails (such as an error or a violation of constraints), none of the changes made by that transaction are applied to the database.
+
+* Rollback: If a transaction fails partway through its execution, the system must roll back (undo) all the changes made by that transaction up to that point. This ensures that the database remains in a consistent state and doesn't get left in an undefined or inconsistent state due to a failed transaction.
+
+* Undo Log: DBMSs often use techniques like undo logs to maintain a record of the changes made during a transaction. If a transaction needs to be rolled back, the undo log is used to reverse the changes made by the transaction.
+
+Atomicity is crucial to maintain data integrity and consistency, especially in scenarios where multiple transactions are being executed concurrently. Without atomicity, the database could end up in a state where some transactions have partially completed, leading to data corruption or inconsistencies.
 
 ----------------------------------------------
 
