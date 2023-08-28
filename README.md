@@ -517,7 +517,7 @@ It's important to note that while all RDBMS systems are relational databases, no
 Database languages are specialized languages used to interact with and manipulate databases. These languages provide different sets of commands and statements for various purposes, such as defining the structure of the database, manipulating data, managing access, and controlling transactions. There are four main types of database languages: DDL, DML, DCL, and TCL.
 
 
-![dblang picture](./data/dbpang.jpg)
+![dblang picture](./data/dblang.jpg)
 
 
 ### DDL (Data Definition Language):
@@ -677,6 +677,7 @@ ACID is an acronym that represents a set of properties or characteristics that e
   Isolation ensures that the operations of one transaction are isolated from the operations of other concurrent transactions. This prevents interference between transactions and ensures that they do not see each other's intermediate states. Transactions should execute as if they were the only ones running, even in a multi-user environment.
 
 * **Durability:**
+  
   Durability guarantees that once a transaction is committed, its changes are permanent and will survive any subsequent system failures, crashes, or power outages. Committed data is stored in a way that it can be recovered and reconstructed even after an unexpected failure.
 
 
