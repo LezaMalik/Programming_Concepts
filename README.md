@@ -391,8 +391,13 @@ Pull Requests provide a structured and controlled way for teams to collaborate o
 ![cmds picture](./data/cmds.png)
 
 
+
+
 ----------------------------------------------
 ----------------------------------------------
+
+
+
 
 
 # Basic Database Concepts
@@ -430,6 +435,54 @@ There are different types of DBMS, including relational databases, NoSQL databas
 ----------------------------------------------
 
 ### 2. What is database?
+A database is a structured collection of data that is organized, stored, and managed in a way that allows efficient access, retrieval, manipulation, and maintenance of data. It serves as a repository for storing various types of information, ranging from simple text entries to complex multimedia content. Databases are used to store data for a wide range of applications, including business, scientific research, education, e-commerce, social networking, and more.
+There are two types of databases, Relational and Non-Relational Databases. 
+
+**Relational Databases:**
+
+Relational databases are a type of database management system that stores and manages data in a structured manner, using tables with rows and columns. These databases are based on the relational model, which was introduced by E.F. Codd in the 1970s. The data in relational databases is organized into tables, where each table represents a specific entity (e.g., customers, orders) and each row represents an instance of that entity. The columns in the table represent attributes or properties of the entity.
+
+Key characteristics of relational databases include:
+
+* Tabular Structure: Data is stored in tables with predefined schemas, where each column has a specific data type and each row represents a record.
+
+* Data Integrity: Relational databases enforce data integrity through constraints, ensuring that data remains accurate and consistent.
+
+* SQL (Structured Query Language): Relational databases use SQL for querying and manipulating data. SQL provides a standardized way to interact with the database.
+
+* ACID Transactions: Relational databases follow the ACID properties to ensure data consistency in transactions.
+
+* Data Relationships: Relationships between tables can be established through keys (primary keys and foreign keys), allowing data to be connected and queried across multiple tables.
+
+* Scalability: While they can scale vertically (adding more resources to a single server), horizontal scalability can be more challenging due to the rigid structure.
+
+* Structured Data: Best suited for applications with well-defined data schemas and complex queries.
+
+Common examples of relational databases include MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server, and SQLite.
+
+
+
+**Non-Relational Databases (NoSQL Databases):**
+
+Non-relational databases, often referred to as NoSQL databases, are a category of databases that diverge from the traditional tabular, structured approach of relational databases. These databases are designed to handle large volumes of unstructured or semi-structured data and offer flexible data models.
+
+Key characteristics of NoSQL databases include:
+
+* Flexible Data Models: NoSQL databases support various data models, including key-value, document, column-family, and graph. This flexibility is useful for accommodating different types of data.
+
+* Scalability: NoSQL databases are well-suited for horizontal scalability, making them a good choice for applications with high volumes of data and traffic.
+
+* Schema Flexibility: NoSQL databases allow for dynamic changes to the data schema, making it easier to adapt to evolving application requirements.
+
+* Performance: NoSQL databases are designed for high-speed data retrieval and can handle large amounts of data efficiently.
+
+* Eventual Consistency: Some NoSQL databases prioritize availability and partition tolerance over strict consistency, leading to the concept of eventual consistency.
+
+* Distributed Architecture: NoSQL databases are often built to be distributed across multiple nodes or servers.
+
+* Unstructured and Semi-Structured Data: Ideal for applications involving diverse data types and rapidly changing data structures.
+
+Common examples of NoSQL databases include MongoDB (document store), Cassandra (column-family store), Redis (key-value store), and Neo4j (graph database).
 
 ----------------------------------------------
 
