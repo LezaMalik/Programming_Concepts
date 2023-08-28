@@ -608,7 +608,27 @@ Denormalization should be employed thoughtfully and strategically, taking into a
 
 ----------------------------------------------
 
-### 7. what is join?
+### 7. What is join?
+A join is an operation that combines rows from two or more tables based on a related column between them. The primary purpose of a join is to retrieve data that is spread across multiple tables and create a unified result set that combines information from these tables.
+
+Joins are a fundamental concept in relational databases and are used to gather data from related tables to answer more complex questions or to combine data in meaningful ways. The columns used for joining tables are typically primary and foreign keys, which establish relationships between the tables.
+
+There are several types of joins commonly used in database queries:
+
+* Inner Join:
+An inner join returns only the rows that have matching values in both the joined tables. If a row in one table does not have a corresponding match in the other table, that row will be excluded from the result.
+
+* Left Join (Left Outer Join):
+A left join returns all the rows from the left (or first) table and the matching rows from the right (or second) table. If there is no match for a row in the left table, the result will contain null values for columns from the right table.
+
+* Right Join (Right Outer Join):
+A right join is similar to a left join but returns all the rows from the right table and the matching rows from the left table. Rows from the right table without a match in the left table will have null values for left table columns.
+
+* Full Outer Join:
+A full outer join returns all rows from both tables, including matching rows and rows that do not have a match in either table. If there is no match for a row in either table, the result will contain null values for the columns from the table without a match.
+
+* Self Join:
+A self join is a join in which a table is joined with itself. It is often used to find relationships within the same table, such as when dealing with hierarchical data.
 
 ----------------------------------------------
 
