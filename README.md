@@ -396,22 +396,43 @@ Pull Requests provide a structured and controlled way for teams to collaborate o
 
 
 ## Basic Database Concepts
+
 *Following are some of the important database concepts.*
 
 
-What is DBMS?
-What is database?
-what is RDBMS?
-what are database languages?
-DDL?
-DML?
-DCL?
-TCL?
-What is Normalization (1NF ,2NF,3NF)?
-what is DeNormalization?
-What is 1NF?
-What is 2NF?
-what is 3NF?
-what is join?
-What is Atomicity?
-What is ACID?
+# 1. What is DBMS?
+
+
+# 2. What is database?
+
+
+# 3. what is RDBMS?
+
+
+# 4. what are database languages? DDL? DML? DCL? TCL?
+
+
+$ 5. What is Normalization (1NF ,2NF,3NF)?
+
+
+# 6. what is DeNormalization?
+
+
+# 7. What is 1NF?
+
+
+# 8. What is 2NF?
+
+
+# 9. what is 3NF?
+
+
+# 10. what is join?
+
+
+# 11. What is Atomicity?
+
+
+# 12. What is ACID?
+
+
