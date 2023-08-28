@@ -513,7 +513,7 @@ It's important to note that while all RDBMS systems are relational databases, no
 
 ----------------------------------------------
 
-### 4. What are database languages? DDL? DML? DCL? TCL?
+### 4. What are Database Languages? DDL? DML? DCL? TCL?
 Database languages are specialized languages used to interact with and manipulate databases. These languages provide different sets of commands and statements for various purposes, such as defining the structure of the database, manipulating data, managing access, and controlling transactions. There are four main types of database languages: DDL, DML, DCL, and TCL.
 
 
