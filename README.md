@@ -30,6 +30,7 @@ Following is the UNICODE Table:
 
 ![unicode picture](./data/unicode.png)
 
+
 ----------------------------------------------
 
 ### 3. What's utf-8?
