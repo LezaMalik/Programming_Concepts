@@ -434,7 +434,7 @@ There are different types of DBMS, including relational databases, NoSQL databas
 
 ----------------------------------------------
 
-### 2. What is database?
+### 2. What is Database?
 A database is a structured collection of data that is organized, stored, and managed in a way that allows efficient access, retrieval, manipulation, and maintenance of data. It serves as a repository for storing various types of information, ranging from simple text entries to complex multimedia content. Databases are used to store data for a wide range of applications, including business, scientific research, education, e-commerce, social networking, and more.
 There are two types of databases, Relational and Non-Relational Databases. 
 
