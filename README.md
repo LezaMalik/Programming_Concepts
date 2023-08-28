@@ -562,6 +562,9 @@ Normalization is a process in database design that involves structuring a relati
 
 The process of normalization is typically carried out using a set of rules and guidelines known as normal forms. There are several normal forms, each representing a specific level of data normalization. The most common normal forms are:
 
+
+![norm picture](./data/norm.png)
+
 ### First Normal Form (1NF):
 Eliminates duplicate columns in a table by ensuring that each column contains only atomic (indivisible) values.
 Each column should contain a single piece of data, and each row should be unique.
@@ -615,6 +618,8 @@ Joins are a fundamental concept in relational databases and are used to gather d
 
 There are several types of joins commonly used in database queries:
 
+![join picture](./data/join.png)
+
 * Inner Join:
 An inner join returns only the rows that have matching values in both the joined tables. If a row in one table does not have a corresponding match in the other table, that row will be excluded from the result.
 
@@ -651,6 +656,8 @@ Atomicity is crucial to maintain data integrity and consistency, especially in s
 
 ### 9. What is ACID?
 ACID is an acronym that represents a set of properties or characteristics that ensure the reliability and consistency of transactions in a database management system (DBMS). These properties are essential for maintaining data integrity, especially in multi-user and concurrent database environments. The ACID properties are:
+
+![acid picture](./data/acid.png)
 
 * **Atomicity:**
 
