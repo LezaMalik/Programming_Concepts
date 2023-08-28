@@ -1,4 +1,4 @@
-## Basic Programming Concepts
+# Basic Programming Concepts
 *Following are some of the important programming concepts.*
 
 
@@ -395,12 +395,12 @@ Pull Requests provide a structured and controlled way for teams to collaborate o
 ----------------------------------------------
 
 
-## Basic Database Concepts
+# Basic Database Concepts
 
 *Following are some of the important database concepts.*
 
 
-# 1. What is DBMS?
+### 1. What is DBMS?
 DBMS stands for Database Management System. It is a software system that enables users to efficiently store, manage, organize, retrieve, and manipulate large amounts of data. A DBMS provides an interface for users and applications to interact with databases without needing to understand the complexities of how the data is stored or managed at the physical level.
 
 Key features of a DBMS include:
@@ -429,47 +429,47 @@ There are different types of DBMS, including relational databases, NoSQL databas
 
 ----------------------------------------------
 
-# 2. What is database?
+### 2. What is database?
 
 ----------------------------------------------
 
-# 3. what is RDBMS?
+### 3. what is RDBMS?
 
 ----------------------------------------------
 
-# 4. what are database languages? DDL? DML? DCL? TCL?
+### 4. what are database languages? DDL? DML? DCL? TCL?
 
 ----------------------------------------------
 
-$ 5. What is Normalization (1NF ,2NF,3NF)?
+### 5. What is Normalization (1NF ,2NF,3NF)?
 
 ----------------------------------------------
 
-# 6. what is DeNormalization?
+### 6. what is DeNormalization?
 
 ----------------------------------------------
 
-# 7. What is 1NF?
+### 7. What is 1NF?
 
 ----------------------------------------------
 
-# 8. What is 2NF?
+### 8. What is 2NF?
 
 ----------------------------------------------
 
-# 9. what is 3NF?
+### 9. what is 3NF?
 
 ----------------------------------------------
 
-# 10. what is join?
+### 10. what is join?
 
 ----------------------------------------------
 
-# 11. What is Atomicity?
+### 11. What is Atomicity?
 
 ----------------------------------------------
 
-# 12. What is ACID?
+### 12. What is ACID?
 
 ----------------------------------------------
 
