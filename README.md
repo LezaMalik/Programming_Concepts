@@ -392,3 +392,26 @@ Pull Requests provide a structured and controlled way for teams to collaborate o
 
 
 ----------------------------------------------
+----------------------------------------------
+
+
+## Basic Database Concepts
+*Following are some of the important database concepts.*
+
+
+What is DBMS?
+What is database?
+what is RDBMS?
+what are database languages?
+DDL?
+DML?
+DCL?
+TCL?
+What is Normalization (1NF ,2NF,3NF)?
+what is DeNormalization?
+What is 1NF?
+What is 2NF?
+what is 3NF?
+what is join?
+What is Atomicity?
+What is ACID?
