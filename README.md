@@ -401,38 +401,75 @@ Pull Requests provide a structured and controlled way for teams to collaborate o
 
 
 # 1. What is DBMS?
+DBMS stands for Database Management System. It is a software system that enables users to efficiently store, manage, organize, retrieve, and manipulate large amounts of data. A DBMS provides an interface for users and applications to interact with databases without needing to understand the complexities of how the data is stored or managed at the physical level.
 
+Key features of a DBMS include:
+
+* Data Storage: The DBMS manages the physical storage of data on disk or other storage devices. It handles the organization of data to optimize storage and retrieval efficiency.
+
+* Data Retrieval: Users can query the database to retrieve specific information using structured query languages like SQL (Structured Query Language).
+
+* Data Manipulation: DBMS allows users to insert, update, and delete data in the database, ensuring data integrity and consistency.
+
+* Data Security: DBMS provides access control mechanisms to restrict unauthorized access to data and ensure data security.
+
+* Concurrency Control: In multi-user environments, DBMS manages concurrent access to the database to prevent conflicts and ensure data consistency.
+
+* Data Integrity: DBMS enforces rules and constraints on data to maintain its accuracy and reliability.
+
+* Backup and Recovery: DBMS provides mechanisms to create backups of data and recover from failures or data corruption.
+
+* Data Abstraction: Users interact with the database using a high-level language, abstracted from the complexities of data storage and retrieval.
+
+* Transaction Management: DBMS supports the concept of transactions, ensuring that a sequence of database operations is treated as a single unit of work with properties like Atomicity, Consistency, Isolation, and Durability (ACID).
+
+* Scalability and Performance: DBMS is designed to handle large datasets and provide efficient data access and manipulation.
+
+There are different types of DBMS, including relational databases, NoSQL databases, object-oriented databases, and more. Each type caters to different data models and use cases. The choice of a DBMS depends on factors like the nature of the data, the scale of operations, and the specific requirements of the application.
+
+----------------------------------------------
 
 # 2. What is database?
 
+----------------------------------------------
 
 # 3. what is RDBMS?
 
+----------------------------------------------
 
 # 4. what are database languages? DDL? DML? DCL? TCL?
 
+----------------------------------------------
 
 $ 5. What is Normalization (1NF ,2NF,3NF)?
 
+----------------------------------------------
 
 # 6. what is DeNormalization?
 
+----------------------------------------------
 
 # 7. What is 1NF?
 
+----------------------------------------------
 
 # 8. What is 2NF?
 
+----------------------------------------------
 
 # 9. what is 3NF?
 
+----------------------------------------------
 
 # 10. what is join?
 
+----------------------------------------------
 
 # 11. What is Atomicity?
 
+----------------------------------------------
 
 # 12. What is ACID?
 
+----------------------------------------------
 
