@@ -590,30 +590,33 @@ Normalization helps achieve several benefits:
 ----------------------------------------------
 
 ### 6. what is DeNormalization?
+Denormalization is a database design technique that involves intentionally introducing redundancy into a database schema. Unlike normalization, which aims to reduce redundancy and improve data integrity, denormalization intentionally duplicates data in order to optimize query performance and improve certain aspects of database performance.
+
+In denormalization, the primary goal is often to enhance read operations at the expense of potentially increasing the complexity of write operations and introducing the risk of data anomalies. By storing redundant data, complex joins and multiple table lookups can be avoided, leading to faster query execution. Denormalization is particularly useful in scenarios where read-heavy workloads are prevalent and quick data retrieval is crucial.
+
+Here are a few common reasons to consider denormalization:
+
+* Performance Improvement: By reducing the need for complex joins and multiple table scans, denormalized databases can lead to faster query execution times. This is especially beneficial for reporting, data warehousing, and analytical applications.
+
+* Reduced Complexity: Denormalization can simplify query writing and maintenance by minimizing the need for joins across multiple tables.
+
+* Aggregation Efficiency: When dealing with large datasets, denormalization can make aggregation operations (like SUM, AVG, COUNT) more efficient.
+
+* Read-Intensive Workloads: Applications that primarily involve reading data, such as business intelligence tools, benefit from denormalization as it accelerates data retrieval.
+
+Denormalization should be employed thoughtfully and strategically, taking into account the specific use case, the types of queries the database will face, the size of the dataset, and the overall performance goals. It's also worth noting that some modern database systems and technologies offer features like indexing, caching, and materialized views that can enhance query performance without resorting to full denormalization.
 
 ----------------------------------------------
 
-### 7. What is 1NF?
+### 7. what is join?
 
 ----------------------------------------------
 
-### 8. What is 2NF?
+### 8. What is Atomicity?
 
 ----------------------------------------------
 
-### 9. what is 3NF?
-
-----------------------------------------------
-
-### 10. what is join?
-
-----------------------------------------------
-
-### 11. What is Atomicity?
-
-----------------------------------------------
-
-### 12. What is ACID?
+### 9. What is ACID?
 
 ----------------------------------------------
 
