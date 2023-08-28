@@ -516,6 +516,10 @@ It's important to note that while all RDBMS systems are relational databases, no
 ### 4. What are database languages? DDL? DML? DCL? TCL?
 Database languages are specialized languages used to interact with and manipulate databases. These languages provide different sets of commands and statements for various purposes, such as defining the structure of the database, manipulating data, managing access, and controlling transactions. There are four main types of database languages: DDL, DML, DCL, and TCL.
 
+
+![dblang picture](./data/dbpang.jpg)
+
+
 ### DDL (Data Definition Language):
 DDL is used to define the structure of the database schema. It includes commands for creating, altering, and dropping database objects like tables, indexes, and views. DDL statements are used to specify the logical organization of data within the database.
 
@@ -563,8 +567,6 @@ Normalization is a process in database design that involves structuring a relati
 The process of normalization is typically carried out using a set of rules and guidelines known as normal forms. There are several normal forms, each representing a specific level of data normalization. The most common normal forms are:
 
 
-![norm picture](./data/norm.png)
-
 ### First Normal Form (1NF):
 Eliminates duplicate columns in a table by ensuring that each column contains only atomic (indivisible) values.
 Each column should contain a single piece of data, and each row should be unique.
@@ -589,6 +591,9 @@ Normalization helps achieve several benefits:
 * Improved Data Integrity: Normalized databases are less prone to data anomalies (insertion, update, deletion anomalies) because data is stored in a more logical and organized manner.
 
 * Easier Maintenance: Changes to the database structure or data are easier to implement without risking data inconsistencies.
+
+![norm picture](./data/norm.png)
+
 
 ----------------------------------------------
 
