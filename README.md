@@ -650,6 +650,21 @@ Atomicity is crucial to maintain data integrity and consistency, especially in s
 ----------------------------------------------
 
 ### 9. What is ACID?
+ACID is an acronym that represents a set of properties or characteristics that ensure the reliability and consistency of transactions in a database management system (DBMS). These properties are essential for maintaining data integrity, especially in multi-user and concurrent database environments. The ACID properties are:
+
+### Atomicity:
+Atomicity ensures that a transaction is treated as a single, indivisible unit of work. Either all the operations within a transaction are successfully completed and committed to the database, or none of them are. If a transaction fails at any point, all changes made by that transaction are rolled back, and the database remains in a consistent state.
+
+### Consistency:
+Consistency ensures that a transaction takes the database from one consistent state to another. Transactions should adhere to defined rules and constraints, maintaining the integrity of the data. If a transaction violates any integrity constraints, the entire transaction is aborted, and the database is left unchanged.
+
+### Isolation:
+Isolation ensures that the operations of one transaction are isolated from the operations of other concurrent transactions. This prevents interference between transactions and ensures that they do not see each other's intermediate states. Transactions should execute as if they were the only ones running, even in a multi-user environment.
+
+### Durability:
+Durability guarantees that once a transaction is committed, its changes are permanent and will survive any subsequent system failures, crashes, or power outages. Committed data is stored in a way that it can be recovered and reconstructed even after an unexpected failure.
+
+These ACID properties are crucial for maintaining data integrity and consistency in databases. They provide the foundation for building reliable systems that can handle concurrent user access and ensure that the data remains accurate and reliable, even in the presence of system failures.
 
 ----------------------------------------------
 
