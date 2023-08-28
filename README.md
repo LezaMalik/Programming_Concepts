@@ -3,7 +3,6 @@
 
 
 
-
 ### 1. What's ASCII?
 ASCII (American Standard Code for Information Interchange) is a character encoding standard that assigns a unique 7-bit binary number to each alphanumeric character, punctuation mark, and control character used in English text. It was widely used in early computer systems and communication protocols.
 
