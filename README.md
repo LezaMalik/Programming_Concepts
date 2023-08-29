@@ -3,7 +3,7 @@
 
 
 
-* 1. [General Programming Concepts](general.md)
+* [General Programming Concepts](general.md)
 
 
-* 2. [Database Concepts](database.md)
+* [Database Concepts](database.md)
