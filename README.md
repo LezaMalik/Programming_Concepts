@@ -3,9 +3,9 @@
 
 
 
-[Link to General File](general.md)
+[General Programming Concepts](general.md)
 
-[Link to Database File](database.md)
+[Database Concepts](database.md)
 
 
 
