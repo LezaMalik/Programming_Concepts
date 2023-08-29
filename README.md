@@ -1,9 +1,9 @@
-### Programming Concepts
+## Programming Concepts
 *Following are some of the important programming concepts.*
 
 
-[General Programming Concepts](general.md)
 
-----------------------------------------
+* 1. [General Programming Concepts](general.md)
 
-[Database Concepts](database.md)
+
+* 2. [Database Concepts](database.md)
