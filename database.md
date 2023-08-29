@@ -283,7 +283,7 @@ These ACID properties are crucial for maintaining data integrity and consistency
 
 ----------------------------------------------
 
-### What is SSD?
+### 10. What is SSD?
 SSD stands for "Solid State Drive." It is a type of data storage device that uses NAND-based flash memory to store data. Unlike traditional Hard Disk Drives (HDDs), which use spinning disks to read and write data, SSDs have no moving parts, making them faster, more durable, and more energy-efficient.
 
 The key advantages of SSDs include:
@@ -307,7 +307,7 @@ SSDs are commonly used as primary drives in laptops and desktop computers to imp
 
 ----------------------------------------------
 
-### RAM vs SSD
+### 11. RAM vs SSD
 
 **RAM (Random Access Memory):**
 
@@ -335,7 +335,7 @@ SSDs are commonly used as primary drives in laptops and desktop computers to imp
 
 ----------------------------------------------
 
-### Speed of RAM and SSD?
+### 12. Speed of RAM and SSD?
 
 **RAM Speed:**
 
