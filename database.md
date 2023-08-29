@@ -335,3 +335,25 @@ SSDs are commonly used as primary drives in laptops and desktop computers to imp
 
 ----------------------------------------------
 
+### Speed of RAM and SSD?
+
+**RAM Speed:**
+
+RAM is extremely fast, with read and write speeds measured in nanoseconds (ns). This makes it ideal for providing the CPU with quick access to data that it's actively using.
+Modern DDR4 RAM, which is common in many computers, typically has speeds that range from around 2133 MHz (megahertz) to over 4000 MHz. The higher the MHz value, the faster the RAM can transfer data.
+
+
+
+**SSD Speed:**
+
+SSDs are significantly faster than traditional Hard Disk Drives (HDDs) but are generally slower than RAM.
+SSD speeds are measured in megabytes per second (MB/s) for sequential read and write operations. Sequential read speeds for SSDs can range from around 200 MB/s to over 5000 MB/s or more, depending on the specific SSD model.
+Random read and write speeds, which measure how quickly the SSD can access and write small chunks of data, are also important. These speeds are usually measured in IOPS (input/output operations per second) and can range from a few thousand IOPS to hundreds of thousands, again depending on the SSD.
+
+
+RAM provides the fastest data access times, allowing the CPU to quickly retrieve and modify data in active use.
+
+SSDs are significantly slower than RAM but still much faster than traditional HDDs. They're used for storing and retrieving data that needs to be accessed more quickly than from an HDD.
+
+
+In terms of overall system performance, having sufficient RAM is crucial for smooth multitasking and quick access to active data, while using an SSD for storage significantly improves boot times, application loading times, and overall system responsiveness compared to using an HDD.
