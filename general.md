@@ -424,6 +424,7 @@ However, SSDs also tend to be more expensive per unit of storage compared to HDD
 SSDs are commonly used as primary drives in laptops and desktop computers to improve system performance, as well as in other devices like smartphones, tablets, gaming consoles, and data centers where speed, durability, and energy efficiency are important factors.
 
 
+
 ----------------------------------------------
 
 ### 20. Compare RAM vs SSD
@@ -480,3 +481,25 @@ In terms of overall system performance, having sufficient RAM is crucial for smo
 
 
 ----------------------------------------------
+
+### 22. What is difference b/w RAM, Hard drive and SSD?
+RAM (Random Access Memory), Hard Drive, and SSD (Solid State Drive) are three different types of computer storage components, each serving distinct purposes in a computer system.
+
+
+* **RAM (Random Access Memory):**
+
+    RAM is a volatile type of memory used by computers to temporarily store data that the CPU (Central Processing Unit) is actively using. It provides fast and temporary storage for running applications and data that are currently being processed. RAM is much faster than other storage devices like hard drives and SSDs, but it loses all its data when the computer is powered off or restarted. The more RAM a computer has, the more applications and data it can keep readily accessible for quick processing.
+
+
+* **Hard Drive (HDD):**
+
+    A hard drive is a traditional mechanical storage device that uses spinning disks (platters) to read and write data. It provides long-term, non-volatile storage for files, documents, software, and the operating system. Hard drives are slower compared to RAM and SSDs in terms of access speed and data transfer rates. They are typically used for storing large amounts of data, such as photos, videos, documents, and software installations. However, due to their mechanical nature, they are more susceptible to physical wear and tear.
+
+
+* **SSD (Solid State Drive):**
+
+    An SSD is a newer type of storage device that uses NAND-based flash memory to store data. SSDs have no moving parts, making them much faster and more durable than traditional hard drives. They provide faster access times, quicker data transfer rates, and improved overall system responsiveness compared to HDDs. SSDs are commonly used as the primary storage drive for operating systems, software, and frequently accessed files. They are also more energy-efficient and generate less heat compared to HDDs.
+
+
+
+![ssd picture](./assets/ssd.jpg)
