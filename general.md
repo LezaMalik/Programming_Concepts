@@ -651,3 +651,7 @@ There are several levels of abstraction commonly used in computer science:
 * Hardware Abstraction: In the context of operating systems, hardware abstraction involves providing a consistent and simplified interface to hardware devices, regardless of the underlying hardware differences. This allows software to work on various hardware platforms without needing to be rewritten for each specific device.
 
 Abstraction is crucial in managing the complexity of software systems, promoting code reuse, and making systems more understandable and maintainable. It allows developers to focus on solving specific problems without getting bogged down in unnecessary details. By using abstraction, computer scientists can create more efficient, scalable, and adaptable solutions to a wide range of problems.
+
+ ![abs picture](./assets/abs.png)
+
+----------------------------------------------
