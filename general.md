@@ -621,3 +621,16 @@ Quantum computers have the potential to revolutionize fields like cryptography, 
   ![quantumComp picture](./assets/quantumComp.png)
 
 ----------------------------------------------
+
+### 27. What is  Moore's Law?
+
+Moore's Law is a statement that describes the trend of rapid technological advancement in the field of semiconductor electronics, particularly in the density and performance of integrated circuits (microchips). It was formulated by Gordon E. Moore, co-founder of Intel Corporation, in 1965. Moore's Law originally predicted that the number of transistors on a microchip would double approximately every two years, leading to a proportional increase in computing power.
+
+The core idea of Moore's Law is that as technology advances, engineers and scientists find ways to pack more and more transistors onto a single chip, making electronic devices smaller, faster, and more capable. Transistors are fundamental building blocks of electronic circuits and perform switching and amplification tasks. Increasing the number of transistors on a chip allows for more complex and powerful electronic devices.
+
+Over the years, Moore's Law has been remarkably accurate in describing the rapid pace of innovation in the semiconductor industry. This continuous miniaturization and increased transistor density have led to significant improvements in computing power, energy efficiency, and cost-effectiveness.
+
+
+----------------------------------------------
+
+### 28. What is Abstraction?
