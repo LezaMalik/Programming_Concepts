@@ -248,6 +248,7 @@ Parquet files are commonly used in data warehousing, data lakes, and data proces
 ----------------------------------------------
 
 ### 15. What is GIT? 
+
 Git is a distributed version control system (VCS) that is widely used for tracking changes in source code during software development. It was created by Linus Torvalds in 2005 and has since become one of the most popular and powerful tools for managing codebase history, collaborating on software projects, and coordinating work among teams of developers.
 
 Here are some key concepts and features of Git:
@@ -274,6 +275,7 @@ Here are some key concepts and features of Git:
 
 ----------------------------------------------
 ### 16. Explain GIT flow with diagram (master/dev/feature/release/)
+
 In the Git Flow branching model, several types of branches are used to manage the development, testing, and release processes. Each type of branch serves a specific purpose in organizing and structuring the workflow. Here's an explanation of the main branch types:
 
 
@@ -400,6 +402,7 @@ Pull Requests provide a structured and controlled way for teams to collaborate o
 ----------------------------------------------
 
 ### 19. What is SSD?
+
 SSD stands for "Solid State Drive." It is a type of data storage device that uses NAND-based flash memory to store data. Unlike traditional Hard Disk Drives (HDDs), which use spinning disks to read and write data, SSDs have no moving parts, making them faster, more durable, and more energy-efficient.
 
 The key advantages of SSDs include:
