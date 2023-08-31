@@ -502,4 +502,69 @@ RAM (Random Access Memory), Hard Drive, and SSD (Solid State Drive) are three di
 
 
 
-![ssd picture](./assets/ssd.jpg)
+    ![ssd picture](./assets/ssd.jpg)
+
+----------------------------------------------
+
+### 22. What is YAML?
+
+YAML (YAML Ain't Markup Language) is a human-readable data serialization format that is often used for configuration files and data exchange between different programming languages. It is designed to be easy for both humans to read and write, and for machines to parse and generate. YAML is often used in applications where structured data needs to be stored in a format that is more human-readable than traditional markup languages like XML or JSON.
+
+Some key features of YAML include:
+
+* Readable Format: YAML uses indentation and whitespace to structure data, making it visually intuitive and easy to understand.
+
+* Hierarchy: YAML supports nested structures, allowing for the representation of hierarchical data, such as configuration settings or complex data models.
+
+* Scalars and Data Types: YAML supports various data types, including strings, numbers, booleans, and null values. It also supports more complex data types like lists (arrays) and dictionaries (maps).
+
+* Comments: YAML allows for comments to be included within the data, providing explanations or context for the human reader.
+
+* Cross-Language Support: YAML is supported by a wide range of programming languages, making it a versatile choice for configuration files that need to be used by different systems.
+
+* Extensibility: While YAML's core specification is relatively simple, different applications and tools can extend YAML by adding their own custom tags and features.
+
+YAML is commonly used for configuration files in software applications, especially in environments where developers and administrators need to define settings, preferences, or options for their programs. It's also used for data exchange in scenarios where structured data needs to be shared between systems.
+
+----------------------------------------------
+
+### 23. What is Encryption?
+
+Encryption is a process of converting information or data into a code or cipher to make it unreadable by anyone who doesn't possess the necessary decryption key or algorithm. The primary purpose of encryption is to ensure the confidentiality and security of sensitive information while it's being transmitted or stored. By using encryption, even if unauthorized individuals or entities gain access to the encrypted data, they would not be able to understand its content without the appropriate decryption key.
+
+There are two main types of encryption:
+
+* **Symmetric Encryption:**   
+    In symmetric encryption, the same key is used for both encryption and decryption. This means that the sender and the receiver must share the same secret key, which can introduce security challenges in terms of securely exchanging the key itself.
+
+* **Asymmetric Encryption (Public-Key Encryption):**  
+    Asymmetric encryption uses a pair of keys: a public key and a private key. The public key is used for encryption, while the private key is used for decryption. Information encrypted with the public key can only be decrypted with the corresponding private key, and vice versa. Asymmetric encryption is more secure for scenarios where secure key exchange is challenging.
+
+Encryption plays a crucial role in maintaining the privacy and security of sensitive data in various contexts, including online communication, financial transactions, data storage, and more. It is widely used in technologies like SSL/TLS for secure web browsing, PGP for email encryption, and various encryption algorithms like AES (Advanced Encryption Standard) for data protection.
+
+----------------------------------------------
+
+### 24. What is SSH?
+
+SSH stands for "Secure Shell" and it is a network protocol that provides a secure way to access and manage remote devices, servers, and systems over an unsecured network. SSH was designed to replace older, less secure remote access methods like Telnet and rlogin, which transmitted data in plaintext and were vulnerable to eavesdropping and unauthorized access.
+
+SSH provides several key features that make it a popular choice for remote administration and secure communication:
+
+* Encryption: SSH encrypts the data exchanged between the client and the server, ensuring that even if someone intercepts the communication, they cannot understand the content without the encryption key.
+
+* Authentication: SSH supports various authentication methods, including passwords and public-key cryptography. Public-key authentication is highly secure and doesn't expose the actual password over the network.
+
+* Data Integrity: SSH verifies the integrity of data during transmission, ensuring that it has not been altered or tampered with during transit.
+
+* Port Forwarding: SSH can be used to create secure tunnels for forwarding network traffic between local and remote machines. This feature is useful for accessing services on remote servers as if they were local.
+
+* Remote Command Execution: SSH allows users to execute commands on a remote server securely, making it useful for remote administration and automation.
+
+SSH operates over the standard Internet Protocol (IP) and typically uses port 22 for communication. It's widely used by system administrators, developers, and IT professionals to manage servers, perform remote maintenance, transfer files securely, and more. There are several implementations of SSH, with OpenSSH being one of the most popular and widely used open-source implementations.
+
+SSH has become a critical tool for secure remote access and management of systems and networks, providing a strong foundation for protecting sensitive data and maintaining the security of communication over the internet.
+
+
+
+
+
