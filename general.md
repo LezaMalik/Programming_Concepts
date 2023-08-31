@@ -17,7 +17,7 @@ ASCII characters may be represented in the following ways:
 
 Following is the ASCII Table: 
 
-![ASCII picture](./data/ASCII.JPG)
+![ASCII picture](./assets/ASCII.JPG)
 
 ----------------------------------------------
 
@@ -28,7 +28,7 @@ Unicode provides a unique number for every character including punctuation marks
 
 Following is the UNICODE Table: 
 
-![unicode picture](./data/unicode.png)
+![unicode picture](./assets/unicode.png)
 
 
 ----------------------------------------------
@@ -42,7 +42,7 @@ Another benefit of UTF-8 encoding is its backward compatibility with ASCII. The 
 
 
 
-![utf picture](./data/utf.PNG)
+![utf picture](./assets/utf.PNG)
 
 ----------------------------------------------
 
@@ -109,7 +109,7 @@ Modern hardware architecture involves a CPU with multiple cores, fast RAM, vario
 
 Modern hardware architecture is characterized by its focus on performance optimization, energy efficiency, and the integration of multiple components to create powerful computing systems.
 
-![hardware picture](./data/hardware.png)
+![hardware picture](./assets/hardware.png)
 
 ----------------------------------------------
 
@@ -129,7 +129,7 @@ The reason 64-bit systems can address significantly more memory than 32-bit syst
 ### 7. How many bits in a byte
 There are 8 bits in a byte. A bit, short for "binary digit," is the smallest unit of digital data and can have a value of either 0 or 1. A byte is a grouping of 8 bits, and it is the basic unit of storage in most computer systems. Bytes are used to represent characters, numbers, and other data in computing. For example, a byte can represent a single ASCII character, a small integer, or a piece of data.
 
-![byte picture](./data/byte.jpg)
+![byte picture](./assets/byte.jpg)
 
 ----------------------------------------------
 
@@ -238,7 +238,7 @@ Key features of the Parquet file format include:
 Parquet files are commonly used in data warehousing, data lakes, and data processing pipelines where large volumes of structured data need to be stored and queried efficiently. The format's ability to balance storage efficiency with query performance makes it a popular choice in big data analytics scenarios.
 
 
-![par picture](./data/par.JPG)
+![par picture](./assets/par.JPG)
 
 
 ----------------------------------------------
@@ -273,7 +273,7 @@ Here are some key concepts and features of Git:
 In the Git Flow branching model, several types of branches are used to manage the development, testing, and release processes. Each type of branch serves a specific purpose in organizing and structuring the workflow. Here's an explanation of the main branch types:
 
 
-![git picture](./data/git.png)
+![git picture](./assets/git.png)
 
 
 
@@ -388,7 +388,7 @@ Pull Requests provide a structured and controlled way for teams to collaborate o
     For example, git clone https://github.com/username/repository.git clones the repository from GitHub.
 
 
-![cmds picture](./data/cmds.png)
+![cmds picture](./assets/cmds.png)
 
 
 

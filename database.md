@@ -115,7 +115,7 @@ It's important to note that while all RDBMS systems are relational databases, no
 Database languages are specialized languages used to interact with and manipulate databases. These languages provide different sets of commands and statements for various purposes, such as defining the structure of the database, manipulating data, managing access, and controlling transactions. There are four main types of database languages: DDL, DML, DCL, and TCL.
 
 
-![dblang picture](./data/dblang.jpg)
+![dblang picture](./assets/dblang.jpg)
 
 
 ### DDL (Data Definition Language):
@@ -190,7 +190,7 @@ Normalization helps achieve several benefits:
 
 * Easier Maintenance: Changes to the database structure or data are easier to implement without risking data inconsistencies.
 
-![norm picture](./data/norm.png)
+![norm picture](./assets/norm.png)
 
 
 ----------------------------------------------
@@ -221,7 +221,7 @@ Joins are a fundamental concept in relational databases and are used to gather d
 
 There are several types of joins commonly used in database queries:
 
-![join picture](./data/join.png)
+![join picture](./assets/join.png)
 
 * Inner Join:
 An inner join returns only the rows that have matching values in both the joined tables. If a row in one table does not have a corresponding match in the other table, that row will be excluded from the result.
@@ -260,7 +260,7 @@ Atomicity is crucial to maintain data integrity and consistency, especially in s
 ### 9. What is ACID?
 ACID is an acronym that represents a set of properties or characteristics that ensure the reliability and consistency of transactions in a database management system (DBMS). These properties are essential for maintaining data integrity, especially in multi-user and concurrent database environments. The ACID properties are:
 
-![acid picture](./data/acid.png)
+![acid picture](./assets/acid.png)
 
 * **Atomicity:**
 
