@@ -526,6 +526,9 @@ Some key features of YAML include:
 
 YAML is commonly used for configuration files in software applications, especially in environments where developers and administrators need to define settings, preferences, or options for their programs. It's also used for data exchange in scenarios where structured data needs to be shared between systems.
 
+
+![yaml picture](./assets/yaml.png)
+
 ----------------------------------------------
 
 ### 23. What is Encryption?
@@ -541,6 +544,11 @@ There are two main types of encryption:
     Asymmetric encryption uses a pair of keys: a public key and a private key. The public key is used for encryption, while the private key is used for decryption. Information encrypted with the public key can only be decrypted with the corresponding private key, and vice versa. Asymmetric encryption is more secure for scenarios where secure key exchange is challenging.
 
 Encryption plays a crucial role in maintaining the privacy and security of sensitive data in various contexts, including online communication, financial transactions, data storage, and more. It is widely used in technologies like SSL/TLS for secure web browsing, PGP for email encryption, and various encryption algorithms like AES (Advanced Encryption Standard) for data protection.
+
+
+  ![encryption picture](./assets/encryption.png)
+
+
 
 ----------------------------------------------
 
@@ -564,7 +572,11 @@ SSH operates over the standard Internet Protocol (IP) and typically uses port 22
 
 SSH has become a critical tool for secure remote access and management of systems and networks, providing a strong foundation for protecting sensitive data and maintaining the security of communication over the internet.
 
+  ![ssh picture](./assets/ssh.png)
 
+
+
+----------------------------------------------
 
 
 
