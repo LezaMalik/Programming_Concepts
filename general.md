@@ -423,7 +423,7 @@ SSDs are commonly used as primary drives in laptops and desktop computers to imp
 
 ----------------------------------------------
 
-### 20. RAM vs SSD
+### 20. Compare RAM vs SSD
 
 **RAM (Random Access Memory):**
 
