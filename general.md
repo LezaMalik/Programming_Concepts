@@ -1,6 +1,6 @@
 # General Programming Concepts
 
-*Following are some of the important programming concepts.*
+*Following are some of the important general programming concepts.*
 
 
 ### 1. What's ASCII?
