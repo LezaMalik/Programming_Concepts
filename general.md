@@ -109,6 +109,8 @@ Modern hardware architecture involves a CPU with multiple cores, fast RAM, vario
 
 Modern hardware architecture is characterized by its focus on performance optimization, energy efficiency, and the integration of multiple components to create powerful computing systems.
 
+Below is the Modern Hardware Architecture shown : 
+
 ![hardware picture](./assets/hardware.png)
 
 ----------------------------------------------
