@@ -575,8 +575,28 @@ SSH has become a critical tool for secure remote access and management of system
   ![ssh picture](./assets/ssh.png)
 
 
-
 ----------------------------------------------
 
+### 25. What is MD2, MD4, MD5?
 
+MD2, MD4, and MD5 are cryptographic hash functions that were developed by Ronald Rivest. These algorithms take an input (often referred to as a message) and produce a fixed-size output known as a hash value or hash digest. The primary purpose of these hash functions is to provide a unique representation of the input data, making it useful for various applications like data integrity verification, password storage, and digital signatures.
+
+* **MD2 (Message Digest Algorithm 2):**
+    
+    MD2 is an older cryptographic hash function that produces a 128-bit (16-byte) hash value. However, MD2 is considered to be weak and insecure due to various vulnerabilities that have been discovered over the years, including collision attacks.
+
+
+* **MD4 (Message Digest Algorithm 4):**
+   
+    MD4 is another hash function designed by Rivest. Like MD2, MD4 is also considered insecure due to vulnerabilities that have been found over time. It produces a 128-bit hash value.
+
+
+* **MD5 (Message Digest Algorithm 5):**
+   
+    MD5 is perhaps the most well-known of these three algorithms. It produces a 128-bit hash value and was widely used for checksums, digital signatures, and password storage. However, similar to MD2 and MD4, MD5 has significant vulnerabilities, including the ability to produce collisions (different inputs generating the same hash value), which makes it unsuitable for security-sensitive applications.
+
+Due to these vulnerabilities, MD2, MD4, and MD5 are no longer considered secure for cryptographic purposes. They have been largely replaced by more secure hash functions such as SHA-1 (Secure Hash Algorithm 1) and the newer members of the SHA-2 (e.g., SHA-256, SHA-512) and SHA-3 families. Additionally, modern cryptographic practices often recommend using key stretching techniques and salting for password storage to enhance security beyond simple hashing.
+
+
+----------------------------------------------
 
