@@ -600,3 +600,24 @@ Due to these vulnerabilities, MD2, MD4, and MD5 are no longer considered secure 
 
 ----------------------------------------------
 
+### 26. What is Quantum Computer?
+A quantum computer is a type of computing device that leverages the principles of quantum mechanics to perform certain types of calculations much more efficiently than classical computers. Quantum mechanics is a branch of physics that describes the behavior of matter and energy at the smallest scales, such as atoms and subatomic particles. Quantum computers use quantum bits, or qubits, as the basic unit of information, which differ from classical bits in that they can represent a combination of 0 and 1 states simultaneously due to a phenomenon called superposition.
+
+Key concepts and features of quantum computers include:
+
+* **Superposition:** Unlike classical bits, which can be either 0 or 1, qubits can exist in a superposition of both states at the same time. This property allows quantum computers to perform certain calculations in parallel, potentially leading to exponential speedup for specific problems.
+
+* **Entanglement:** Qubits can become entangled, which means the state of one qubit is dependent on the state of another qubit, even when they are physically separated. This property can be used to create more complex quantum states that can't be efficiently represented by classical systems.
+
+* **Quantum Gates:** Quantum computers use quantum gates to manipulate qubits' states, similar to how classical computers use logic gates to manipulate bits. Quantum gates can perform operations that take advantage of superposition and entanglement to process information.
+
+* **Quantum Algorithms:** Certain algorithms designed specifically for quantum computers can solve problems faster than classical algorithms. The most famous example is Shor's algorithm, which can efficiently factor large numbers, posing a threat to classical encryption methods like RSA.
+
+* **Quantum Error Correction:** Quantum systems are susceptible to errors due to various factors, including noise and decoherence. Quantum error correction techniques are crucial to maintain the integrity of quantum computations.
+
+Quantum computers have the potential to revolutionize fields like cryptography, optimization, and complex simulations. They could provide solutions to problems that are currently computationally infeasible for classical computers to handle in a reasonable amount of time. However, building and maintaining stable quantum computers is an extremely challenging endeavor due to the delicate nature of quantum states and the need for advanced technologies to control and protect them from environmental interference.
+
+
+  ![quantumComp picture](./assets/quantumComp.png)
+
+----------------------------------------------
