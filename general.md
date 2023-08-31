@@ -68,6 +68,11 @@ UTF-8: A variable-width encoding that uses 8, 16, or 24 bits to represent charac
 
 When reading or writing text data to and from disk, it's important to handle the character encoding correctly to ensure that the data is interpreted and displayed as intended. Different programming languages and libraries provide functions and classes to handle these encoding and decoding operations, abstracting away the low-level details for developers.
 
+
+
+![hdd picture](./assets/hdd.jpg)
+
+
 ----------------------------------------------
 
 ### 5. Explain Modern Hardware Architecture
@@ -208,6 +213,33 @@ Here are some key concepts in XML:
 * Attributes: Attributes are additional information associated with an element. They are specified within the start tag of an element and consist of a name and a value. Attributes provide extra metadata about an element.
 
 * Text: Text refers to the content enclosed within an element. This can include plain text, numbers, or other data that the element represents. Text content is placed between the start and end tags of an element.
+
+
+**Example :**
+
+  ```
+    <library>
+      <book isbn="123456789">
+        <title>Introduction to XML</title>
+        <author>John Doe</author>
+      </book>
+      <book isbn="987654321">
+        <title>XML and Beyond</title>
+        <author>Jane Smith</author>
+      </book>
+    </library>
+    
+  ```
+
+
+In this example:
+
+* "library" is the root element.
+* "book" elements are child elements of the "library" element.
+* "isbn" is an attribute of the "book" element.
+* "title" and "author" are child elements of "book" element.
+* "Introduction to XML" and "John Doe" are text content within the "title" and "author" elements.
+
 
 ----------------------------------------------
 
