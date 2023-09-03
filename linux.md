@@ -864,6 +864,7 @@ Here are some key points about crontab and cron jobs:
 * Scheduling: You can use crontab to schedule tasks to run at specific times, dates, or intervals. These tasks can include running scripts, executing commands, or performing system maintenance.
 
 * Syntax: Cron jobs are defined using a specific syntax within a crontab file. The syntax consists of five fields that specify when a job should run:
+  
     `* * * * * command_to_execute`
     
     * Each asterisk (*) represents a time unit, with the fields corresponding to minutes, hours, days of the month, months, and days of the week.
@@ -882,7 +883,9 @@ crontab and cron jobs are commonly used for various purposes, including system m
 ----------------------------------------------
 
 ### 25. How to change ownership of a file?
+
 To change the ownership of a file in a Unix-like operating system, including Linux, you can use the chown (change owner) command. The chown command allows you to change both the user owner and the group owner of a file. You typically need superuser privileges (root access) to change ownership of files that you don't own. 
+
 Here's the basic syntax of the chown command:
 
 `sudo chown new_owner:new_group file_or_directory`
