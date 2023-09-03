@@ -696,14 +696,117 @@ Configuring and managing RAID arrays in Linux typically involves using software 
 
 ----------------------------------------------
 
-### 20. What is difference b/w absoulue and relative path?
+### 20. What is difference b/w absolute and relative path?
+The difference between absolute and relative paths lies in how they specify the location or location of a file or directory within a file system. These concepts are fundamental in file and directory navigation on computer systems:
+
+1. **Absolute Path:**
+    * An absolute path provides the complete and exact location of a file or directory starting from the root directory of the file system.
+    * It begins with a forward slash (/) in Unix-like systems (Linux, macOS) or a drive letter and a colon (C:\, D:\) in Windows.
+    * It specifies the full directory path hierarchy, including all intermediate directories, leading up to the target file or directory.
+    * Absolute paths are not dependent on the current working directory (the directory you are currently located in). They provide an unambiguous reference to a file or directory regardless of your current location.
+    * Examples of absolute paths in Unix-like systems:
+        * /home/user/documents/file.txt (Linux)
+        * /Users/user/Documents/file.txt (macOS)
+        * C:\Users\user\Documents\file.txt (Windows)
+
+
+
+2. **Relative Path:**
+    * A relative path specifies the location of a file or directory relative to the current working directory.
+    * It does not start with a root directory symbol (/ in Unix-like systems) or a drive letter and colon (C:\, D:\ in Windows).
+    * Instead, it describes the path to the target file or directory relative to your current location in the file system.
+    * Relative paths are context-dependent, meaning they change depending on your current working directory. They are often used when referring to files or directories within the same project or directory structure.
+    * Examples of relative paths:
+        * If your current working directory is /home/user/documents/, then file.txt is a relative path to a file in the same directory.
+        * If your current working directory is /home/user/, then documents/file.txt is a relative path to the same file.
+
+
+**Key Differences:**
+
+* Absolute paths provide the full path from the root directory and are not affected by the current working directory. Relative paths are based on your current location in the file system.
+* Absolute paths are more explicit and less prone to errors when specifying the location of a file or directory.
+* Relative paths are shorter and more convenient when referring to files or directories within the same project or directory structure.
+* To move from a relative path to an absolute path, you need to know the current working directory.
+
 
 ----------------------------------------------
 
 ### 21. What is awk?
+awk is a versatile and powerful text-processing tool and programming language that is primarily used for data extraction, transformation, and reporting in Unix-like operating systems, including Linux. It is named after its creators: Alfred Aho, Peter Weinberger, and Brian Kernighan.
 
-----------------------------------------------4
+awk operates on text files, processing data line by line, and allows you to specify patterns and actions to perform on those lines. It is particularly useful for tasks such as:
+
+* Text Extraction: You can use awk to extract specific columns or fields from structured text data, like CSV files or log files.
+
+* Text Transformation: awk can manipulate text data by performing operations like string substitution, concatenation, and formatting.
+
+* Data Summarization: It can be used to generate summary statistics, calculate totals, and aggregate data.
+
+* Pattern Matching: awk is known for its pattern matching capabilities. You can specify patterns to match lines or portions of lines and then perform actions on those matching lines.
+
+* Custom Data Processing: With awk, you can write custom scripts for processing and analyzing data, making it a useful tool for ad-hoc data manipulation tasks.
+
+Here's a basic structure of an awk command:
+
+`awk 'pattern { action }' filename`
+
+* pattern is a condition that defines when the action should be executed.
+* action is a set of commands that specify what to do when the pattern is met.
+* filename is the name of the input file.
+
+**Example:** To print the second column of a CSV file named data.csv, you can use:
+
+`awk -F',' '{print $2}' data.csv`
+
+In this command:
+* -F',' specifies that the input field separator is a comma (,) because it's a CSV file.
+* {print $2} is the action, which prints the second field (column) of each line.
+
+
+----------------------------------------------
+
 ### 22. What is sed?
+sed, short for "stream editor," is a command-line utility and text processing tool available in Unix-like operating systems, including Linux and macOS. It is designed for performing text transformations on an input stream (a file or input from a pipeline) and is often used for tasks such as text substitution, deletion, insertion, and basic text manipulation. sed is particularly useful for automated editing and scripting.
+
+The basic syntax of a sed command is as follows:
+
+`sed [options] 'script' inputfile`
+
+* [options]: Specifies various options that modify the behavior of sed.
+* 'script': Contains a sequence of sed commands, each enclosed in single quotes.
+* inputfile: The file or input stream to process. If not specified, sed reads from the standard input (usually from a pipeline or user input).
+
+Here are some common tasks that sed can perform:
+
+1. Text Substitution: sed can find and replace text patterns within a file or input stream.
+    * `sed 's/old_text/new_text/g' inputfile`
+    
+        This command replaces all occurrences of old_text with new_text in the input.
+
+2. Deleting Lines: sed can delete specific lines based on patterns or line numbers.
+    * `sed '/pattern_to_delete/d' inputfile`
+
+        This command deletes all lines containing pattern_to_delete.
+
+3. Inserting and Appending Text: sed can insert or append text to specific lines or locations in the input.
+    * `sed '3i\This is a new line' inputfile`
+
+        This command inserts the specified text before the third line in the input.
+
+4. Basic Text Manipulation: sed can perform various text manipulation tasks, including reversing lines, deleting leading/trailing spaces, and more.
+    * `sed 's/^ *//' inputfile  # Remove leading spaces`
+    * `sed 's/ *$//' inputfile  # Remove trailing spaces`
+
+
+5. Using Regular Expressions: sed supports regular expressions, allowing for complex pattern matching and transformations.
+    * `sed 's/[0-9]\+//' inputfile  # Remove all numbers`
+
+6. In-Place Editing: You can use the -i option to perform in-place editing, which modifies the input file directly.
+    * `sed -i 's/old_text/new_text/g' inputfile`
+
+7. Multiple Commands: You can chain multiple sed commands together in a script to perform a series of text transformations.
+    * `sed -e 's/old_text/new_text/g' -e '/pattern_to_delete/d' inputfile`
+
 
 ----------------------------------------------
 
