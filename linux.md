@@ -389,14 +389,109 @@ In summary, CLI and GUI are two different ways of interacting with a computer. C
 ----------------------------------------------
 
 ### 12. What is swap space in linux?
+In Linux, swap space is a designated area on a storage device (usually a hard drive or SSD) that serves as virtual memory. It provides a way for the operating system to temporarily transfer data from physical RAM (Random Access Memory) to disk storage and vice versa. Swap space is an integral part of the memory management system in Linux and is used to supplement physical RAM when it becomes fully utilized. 
+
+Here are some key points about swap space in Linux:
+
+1. Purpose:
+
+    * Virtual Memory Extension: Swap space extends the available virtual memory of a system by providing additional storage for data that cannot fit in physical RAM.
+
+    * Memory Overflow: When physical RAM is fully occupied, Linux uses swap space to temporarily store less frequently used data, allowing the system to continue functioning.
+
+2. Components:
+
+    * Swap Partition: Swap space can be created as a separate partition on a storage device, typically during the system installation process. This is known as a "swap partition."
+
+    * Swap File: Alternatively, swap space can also be implemented as a swap file within an existing file system.
+
+3. Usage Scenarios:
+
+    * Memory Overflow: Swap space is primarily used when physical RAM is exhausted. If a system's RAM is insufficient for the running processes, the OS will start swapping data in and out of the swap space to free up RAM for active tasks.
+
+    * Hibernation: Swap space is used to save the contents of RAM when the system enters hibernation (suspend-to-disk) mode so that it can be restored when the system is resumed.
+
+4. Performance Impact:
+
+    * Slower Than RAM: Accessing data from swap space is significantly slower than accessing data from RAM because it involves reading from or writing to a storage device.
+
+    * Prevents Out-of-Memory Crashes: While swap space can help prevent out-of-memory crashes, excessive swapping (referred to as "thrashing") can degrade system performance due to the high disk activity.
+
+5. Configuration:
+
+    * Swappiness: Linux allows users to configure the "swappiness" parameter, which controls how aggressively the kernel swaps data to the swap space. A lower value means the kernel will swap less often, favoring the use of physical RAM.
+
+    * Swap Size: The size of the swap space depends on the specific requirements of the system. It is typically recommended to have a swap space that is at least as large as the system's RAM, although this can vary based on use case and system configuration.
+
+    * Monitoring: System administrators can monitor swap usage and performance using tools like free, swapon, and various system monitoring utilities to ensure that the system is not thrashing excessively.
+
+In summary, swap space in Linux serves as an extension of physical RAM, allowing the operating system to manage memory overflow and provide a safety net when RAM becomes fully utilized. While it can prevent out-of-memory crashes, its use should be monitored to avoid excessive swapping, which can negatively impact system performance.
+
 
 ----------------------------------------------
 
 ### 13. What are Environment variable and shell variable?
+Environment variables and shell variables are both fundamental concepts in the world of computing and are commonly used in operating systems, including Unix-like systems such as Linux and macOS. They are used to store and manage data that can be accessed by various programs and processes running on a computer.
+
+1. **Environment Variables:**
+
+    * Global Scope: Environment variables are variables that are accessible to all processes and programs running on a system. They have a global scope, meaning they can be accessed from any part of the system.
+
+    * Persistence: Environment variables are typically set at the system level and persist between sessions. They are often used to configure system-wide settings and store information like system paths, default settings, or user-specific preferences.
+
+    * Examples: Common examples of environment variables include 
+        * PATH (used to specify directories to search for executable files),
+        * HOME (points to the user's home directory), and 
+        * USER (stores the username of the currently logged-in user).
+
+
+2. **Shell Variables:**
+
+    * Local Scope: Shell variables, on the other hand, are variables that are specific to the shell or command-line environment in which they are defined. They have a local scope and are not accessible outside of that particular shell session.
+
+    * Temporary: Shell variables are typically used for temporary storage of data within a shell script or interactive shell session. They are not meant for long-term or system-wide configuration.
+
+    * Examples: Shell variables are created and used within shell scripts or directly in the command line. For example, in a Bash shell script, you might have a shell variable like count=10, which you can use within that script.
+
+
+In summary, environment variables are global variables that are accessible to all processes and are typically used for system-wide configuration, while shell variables are local to a specific shell session or script and are used for temporary data storage or script-specific settings. Both types of variables play important roles in managing and configuring a Unix-like operating system.
+
 
 ----------------------------------------------
 
 ### 14. What are symbolic lnks in linux?
+Symbolic links, often referred to as "symlinks" or "soft links," are a feature in Linux and Unix-like operating systems that allow you to create a special type of file that acts as a pointer or reference to another file or directory. Symbolic links are used for various purposes, including simplifying file management, providing flexibility, and creating references to files or directories located in different locations on the file system.
+
+Here are some key characteristics and uses of symbolic links in Linux:
+
+1. File and Directory References:
+
+    * Symbolic links can point to both files and directories. When you create a symbolic link, it essentially contains the path to the target file or directory.
+
+2. Relative or Absolute Paths:
+
+    * Symbolic links can use either relative or absolute paths to specify the location of the target file or directory. Relative paths are often preferred as they make symlinks more portable.
+
+3. Symbolic vs. Hard Links:
+
+    * Unlike hard links, which create multiple directory entries (inodes) that point to the same data blocks on the disk, symbolic links are independent files that reference the target. Changes to the target file's name or location won't affect the symbolic link.
+
+4. Permissions and Ownership:
+
+    * Symbolic links have their permissions and ownership settings. The permissions are not relevant to the target file's permissions; instead, they determine who can read, write, or execute the symbolic link itself.
+
+5. Use Cases:
+
+    * Simplifying File Management: Symlinks can be used to create shorter or more convenient paths to frequently accessed files or directories.
+    * Cross-File System Linking: They can link to files or directories on different file systems.
+    * Updating and Version Control: Symbolic links are used in various software configurations to point to the currently active version or configuration of a file or directory.
+    * Referencing Shared Libraries: They are often used to reference shared libraries, making it easier to update or switch between library versions.
+
+6. Caution:
+
+    * If the target file or directory is deleted, the symbolic link becomes "dangling" and no longer points to a valid location.
+    * Symbolic links can create circular references if not used carefully, potentially causing infinite loops.
+
 
 ----------------------------------------------
 
