@@ -9,4 +9,4 @@
 
 3. [Linux Concepts](linux.md)
 
-4. [Linux Commands](../Int_2023/README.md)
+4. [Linux Commands](https://github.com/LezaMalik/Int_2023/blob/main/README.md)
