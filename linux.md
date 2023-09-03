@@ -181,4 +181,87 @@ Examples of popular package managers in different Linux distributions include:
 3. Arch Linux: Pacman
 4. openSUSE: Zypper
 
+
+----------------------------------------------
+
+### 6. What is Linux Kernel?
+
+
+
+----------------------------------------------
+
+### 7. What is shell in Linux?
+
+----------------------------------------------
+
+### 8. Difference b/w  shell and Terminal in linux?
+
+----------------------------------------------
+
+### 9. What is root acount in linux?
+
+----------------------------------------------
+
+### 10. What are groups in linux?
+
+----------------------------------------------
+
+### 11. What is CLI and GUI interface?
+
+----------------------------------------------
+
+### 12. What is swap space in linux?
+
+----------------------------------------------
+
+### 13. What are Environment variable and shell variable?
+
+----------------------------------------------
+
+### 14. What are symbolic lnks in linux?
+
+----------------------------------------------
+
+### 15. What is vim?
+
+----------------------------------------------
+
+### 16. How to open a file and close a file using vim?
+
+----------------------------------------------
+
+
+### 17. What are file permission?
+
+----------------------------------------------
+
+### 18. How to change file permissions?
+
+----------------------------------------------
+
+### 19. What is RAID in linux?
+
+----------------------------------------------
+
+### 20. What is difference b/w absoulue and relative path?
+
+----------------------------------------------
+
+### 21. What is awk?
+
+----------------------------------------------4
+### 22. What is sed?
+
+----------------------------------------------
+
+### 23. What is grep?
+
+----------------------------------------------
+
+### 24. What is crontab?
+
+----------------------------------------------
+
+### 25. How to change ownership of a file?
+
 ----------------------------------------------
