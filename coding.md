@@ -30,3 +30,32 @@ var twoSum = function(nums, target) {
 
 
 **Solution:**
+
+
+
+----------------------------------------------
+
+### Question 3 : Difference between Stack and Queue data structure
+----------------------------------------------
+### Question 3 : Return duplicate characters(in an array) from a given string
+----------------------------------------------
+### Question 3 : Check if a String contains only digits
+----------------------------------------------
+### Question 3 :Missing Number
+----------------------------------------------
+### Question 3 : Find the Duplicate Number
+----------------------------------------------
+### Question 3 : Return the largest and the smallest integers in an unsorted integer array
+----------------------------------------------
+### Question 3 : Contains Duplicate
+----------------------------------------------
+### Question 3 : Reverse Words in a String
+----------------------------------------------
+### Question 3 : Design Linked List (Read JDK implementation)
+----------------------------------------------
+### Question 3 : Middle of the Linked List
+----------------------------------------------
+### Question 3 : Reverse Linked List
+----------------------------------------------
+### Question 3 : Remove duplicate nodes in an unsorted linked list
+----------------------------------------------
