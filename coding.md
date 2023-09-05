@@ -12,6 +12,7 @@ var twoSum = function(nums, target) {
     
     for (let i=0; i<nums.length-1; i++) {
         for (let j=i+1; j<nums.length; j++) {
+
             if (nums[i] + nums[j] == target) { 
                 return [i, j];
             }       
@@ -42,7 +43,7 @@ var rotateString = function(s, goal) {
         if (temp.includes(goal)) {
                 return true;
         }
-
+        
         return false;
 };
 
@@ -93,8 +94,7 @@ function findDuplicates(str) {
   const charSet = new Set();
   const duplicates = [];
 
-  for (const char of str) {
-
+  for (const char of str) {   
     if (charSet.has(char)) {
       duplicates.push(char);
     } 
@@ -102,7 +102,7 @@ function findDuplicates(str) {
     else {
       charSet.add(char);
     }
-    
+
   }
 
   return duplicates;
@@ -114,6 +114,26 @@ function findDuplicates(str) {
 ### Question 5 : Check if a String contains only digits
 
 **Solution:**
+
+```
+
+// '/\d/': In JavaScript regular expressions, / and / are delimiters used to define a regular expression pattern.
+// '\d': This is a shorthand character class in regular expressions that matches any digit from 0 to 9.
+// The test method checks if the string matches this regular expression and returns true if it does.
+
+
+function containsOnlyDigits(str) {
+  for (const char of str) {
+    if (!/\d/.test(char)) {
+      return false; 
+    }
+  }
+
+  return true; 
+}
+
+```
+
 ----------------------------------------------
 ### Question 6 :Missing Number
 
