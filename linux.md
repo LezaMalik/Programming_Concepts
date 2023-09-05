@@ -30,7 +30,11 @@ Basic Features of Linux:
 
 * Graphical User Interface (GUI): While Linux is known for its CLI, it also offers GUI options. Various desktop environments and window managers provide a user-friendly interface for those who prefer graphical interaction.
 
-* Software Package Management: Linux distributions typically use package managers to simplify software installation, updates, and removal. Package managers handle dependencies and ensure a consistent and organized software ecosystem.
+* Software Package Management: Linux distributions typically use package managers to simplify software installation, updates, and removal. Package managers handle dependencies and ensure a consistent and organized software ecosystem. 
+   * Debian/Ubuntu: APT (Advanced Package Tool)
+   * Red Hat/CentOS: YUM (Yellowdog Updater, Modified) or DNF (Dandified YUM)
+   * Arch Linux: Pacman
+   * openSUSE: Zyppe
 
 * Portability: Linux can run on a wide range of hardware architectures, from servers and desktops to embedded systems and mobile devices.
 
