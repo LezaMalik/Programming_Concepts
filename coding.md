@@ -32,6 +32,21 @@ var twoSum = function(nums, target) {
 
 **Solution:**
 
+```
+var rotateString = function(s, goal) {
+        if(s.length!=goal.length) {
+                return false;
+        }
+
+        let temp = s+s;
+        if (temp.includes(goal)) {
+                return true;
+        }
+
+        return false;
+};
+
+```
 
 
 ----------------------------------------------
@@ -39,6 +54,34 @@ var twoSum = function(nums, target) {
 ### Question 3 : Difference between Stack and Queue data structure
 
 **Solution:**
+
+**Stack:**
+
+* A stack is a linear data structure that follows the Last-In-First-Out (LIFO) order, which means that the last element added is the first one to be removed.
+* It supports two primary operations: push to add an element to the top of the stack and pop to remove the top element.
+* Stacks are commonly used for tasks involving function call management, maintaining a history of actions for undo functionality, and evaluating expressions in postfix notation.
+* Think of it like a stack of plates where you can only add or remove plates from the top.
+
+**Queue:**
+
+* A queue is another linear data structure that follows the First-In-First-Out (FIFO) order, meaning that the first element added is the first one to be removed.
+* It supports two primary operations: enqueue to add an element to the back of the queue and dequeue to remove an element from the front.
+* Queues are frequently used for tasks such as task scheduling in operating systems, managing print jobs in a printer, and handling incoming requests in a web server.
+* Imagine it as a line of people waiting for a bus, where the person who arrived first is the first to board.
+
+
+Following is the table showing the comparison: 
+
+
+| Characteristic            | Stack                                    | Queue                                |
+|---------------------------|------------------------------------------|--------------------------------------|
+| Order of Access           | Last-In-First-Out (LIFO)                | First-In-First-Out (FIFO)            |
+| Operations                | `push` (add to top), `pop` (remove top)  | `enqueue` (add to back), `dequeue` (remove front) |
+| Use Cases                | Function call management, undo/redo, postfix expression evaluation | Task scheduling, request handling, breadth-first search |
+| Examples                  | Browser history, undo functionality, recursive algorithms | Print job management, task scheduling in OS, web server requests |
+| Data Structure Representation | Can be implemented with arrays or linked lists | Can be implemented with arrays or linked lists |
+| Time Complexity (basic ops) | Typically `O(1)` for `push` and `pop` operations | Typically `O(1)` for `enqueue` and `dequeue` operations |
+
 
 ----------------------------------------------
 ### Question 4 : Return duplicate characters(in an array) from a given string
