@@ -39,10 +39,12 @@ var twoSum = function(nums, target) {
 ### Question 3 : Difference between Stack and Queue data structure
 
 **Solution:**
+
 ----------------------------------------------
 ### Question 4 : Return duplicate characters(in an array) from a given string
 
 **Solution:**
+
 ----------------------------------------------
 ### Question 5 : Check if a String contains only digits
 
@@ -59,18 +61,22 @@ var twoSum = function(nums, target) {
 ### Question 8 : Return the largest and the smallest integers in an unsorted integer array
 
 **Solution:**
+
 ----------------------------------------------
 ### Question 9 : Contains Duplicate
 
 **Solution:**
+
 ----------------------------------------------
 ### Question 10 : Reverse Words in a String
 
 **Solution:**
+
 ----------------------------------------------
 ### Question 11 : Design Linked List (Read JDK implementation)
 
 **Solution:**
+
 ----------------------------------------------
 ### Question 12 : Middle of the Linked List
 
