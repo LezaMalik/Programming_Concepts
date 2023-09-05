@@ -88,6 +88,28 @@ Following is the table showing the comparison:
 
 **Solution:**
 
+```
+function findDuplicates(str) {
+  const charSet = new Set();
+  const duplicates = [];
+
+  for (const char of str) {
+
+    if (charSet.has(char)) {
+      duplicates.push(char);
+    } 
+
+    else {
+      charSet.add(char);
+    }
+    
+  }
+
+  return duplicates;
+}
+
+```
+
 ----------------------------------------------
 ### Question 5 : Check if a String contains only digits
 
