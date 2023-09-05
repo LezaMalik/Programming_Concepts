@@ -6,7 +6,11 @@
 
 ### 1. What is Linux? What are basic features?
 
-Linux is an open-source operating system kernel that was originally developed by Linus Torvalds in 1991. It serves as the core component of various operating systems, known as Linux distributions or simply "distros." Linux distributions combine the Linux kernel with a collection of software, including libraries, utilities, and applications, to create complete and functional operating systems.
+Linux is an open-source operating system kernel created by Linus Torvalds in the early 1990s. It was inspired by Linus's interest in operating systems and his desire to develop a Unix-like system for personal computers. Unix was the established model, but it was costly and not accessible for personal use. Linus, a Finnish computer science student, began working on his own Unix-like kernel as a hobby.
+
+He shared his early work on Usenet, inviting collaboration. This open-source approach attracted a community of developers interested in creating a free and open-source Unix-like system. Over time, Linux evolved into a powerful and versatile operating system kernel.
+
+Linux is characterized by its open-source nature, collaborative development model, stability, and versatility. It has become a cornerstone of various Linux distributions, each tailored to different user needs. Linux's success is rooted in its commitment to open-source principles, enabling its use in a wide range of computing environments, from servers and supercomputers to embedded systems and personal computers.
 
 Basic Features of Linux:
 
