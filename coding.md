@@ -147,6 +147,18 @@ function containsOnlyDigits(str) {
 
 **Solution:**
 
+```
+var missingNumber = function(nums) {
+    for(var i=0; i<=nums.length;i++){
+        if(nums.includes(i)==false){
+            return i
+        }
+    }   
+       
+};
+
+```
+
 ----------------------------------------------
 
 ### Question 7 : Find the Duplicate Number
