@@ -199,6 +199,25 @@ var findDuplicate = function(nums) {
 
 **Solution:**
 
+```
+var containsDuplicate = function(nums) {
+    const numSet = new Set();
+    let check= false;
+
+    for (let i=0; i<nums.length; i++) {
+        if(numSet.has(nums[i])) {
+            check = true;
+        }
+
+        else {
+            numSet.add(nums[i])
+        }
+    }
+    return check;
+};
+
+```
+
 ----------------------------------------------
 
 ### Question 10 : Reverse Words in a String
