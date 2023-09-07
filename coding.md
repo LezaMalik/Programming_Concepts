@@ -9,6 +9,7 @@
 
 ```
 //JS
+
 var twoSum = function(nums, target) {
     
     for (let i=0; i<nums.length-1; i++) {
@@ -37,6 +38,7 @@ var twoSum = function(nums, target) {
 
 ```
 //JS
+
 var rotateString = function(s, goal) {
         if(s.length!=goal.length) {
                 return false;
@@ -97,6 +99,7 @@ Following is the table showing the comparison:
 
 ```
 //JS
+
 function findDuplicates(str) {
   const charSet = new Set();
   const duplicates = [];
@@ -125,6 +128,7 @@ function findDuplicates(str) {
 
 ```
 //JS
+
 // '/\d/': In JavaScript regular expressions, / and / are delimiters used to define a regular expression pattern.
 // '\d': This is a shorthand character class in regular expressions that matches any digit from 0 to 9.
 // The test method checks if the string matches this regular expression and returns true if it does.
@@ -151,6 +155,7 @@ function containsOnlyDigits(str) {
 
 ```
 //JS
+
 var missingNumber = function(nums) {
     for(var i=0; i<=nums.length;i++){
         if(nums.includes(i)==false){
@@ -175,6 +180,7 @@ var missingNumber = function(nums) {
 
 ```
 //JS
+
 var findDuplicate = function(nums) {
     const numsSet = new Set();
     for (let i=0; i<=nums.length; i++) {
@@ -198,6 +204,7 @@ var findDuplicate = function(nums) {
 
 ```
 //JS
+
 function findMinMax(arr) {
     if (arr.length === 0) {
         return null; 
@@ -229,6 +236,7 @@ function findMinMax(arr) {
 
 ```
 //JS
+
 var containsDuplicate = function(nums) {
     const numSet = new Set();
     let check= false;
@@ -263,6 +271,7 @@ var containsDuplicate = function(nums) {
 
 ```
 //JS
+
 var reverseWords = function(s) {
 
     let temp = s.split(" ").reverse()
