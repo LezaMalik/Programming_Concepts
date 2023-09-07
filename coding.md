@@ -170,6 +170,22 @@ var missingNumber = function(nums) {
 
 **Solution:**
 
+```
+var findDuplicate = function(nums) {
+    const numsSet = new Set();
+    for (let i=0; i<=nums.length; i++) {
+        if (numsSet.has(nums[i])) {
+            return nums[i];
+        }
+
+        else {
+            numsSet.add(nums[i]);
+        }
+    }   
+};
+
+```
+
 ----------------------------------------------
 
 ### Question 8 : Return the largest and the smallest integers in an unsorted integer array
