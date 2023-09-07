@@ -8,6 +8,7 @@
 **Solution:**
 
 ```
+
 var twoSum = function(nums, target) {
     
     for (let i=0; i<nums.length-1; i++) {
@@ -21,6 +22,7 @@ var twoSum = function(nums, target) {
 };
 
 ```
+
 ----------------------------------------------
 
 ### Question 2 : Rotate String 
@@ -63,6 +65,7 @@ var rotateString = function(s, goal) {
 * Stacks are commonly used for tasks involving function call management, maintaining a history of actions for undo functionality, and evaluating expressions in postfix notation.
 * Think of it like a stack of plates where you can only add or remove plates from the top.
 
+
 **Queue:**
 
 * A queue is another linear data structure that follows the First-In-First-Out (FIFO) order, meaning that the first element added is the first one to be removed.
@@ -85,6 +88,8 @@ Following is the table showing the comparison:
 
 
 ----------------------------------------------
+
+
 ### Question 4 : Return duplicate characters(in an array) from a given string
 
 **Solution:**
