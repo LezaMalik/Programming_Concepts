@@ -232,6 +232,15 @@ var containsDuplicate = function(nums) {
 
 **Solution:**
 
+```
+var reverseWords = function(s) {
+
+    let temp = s.split(" ").reverse()
+    return temp.filter(w=> w!== "").join(" ");
+};
+
+```
+
 ----------------------------------------------
 
 ### Question 11 : Design Linked List (Read JDK implementation)
