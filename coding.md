@@ -196,6 +196,30 @@ var findDuplicate = function(nums) {
 
 **Solution:**
 
+```
+//JS
+function findMinMax(arr) {
+    if (arr.length === 0) {
+        return null; 
+    }
+
+    let min = arr[0];
+    let max = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+
+    return { min, max };
+}
+
+```
+
 ----------------------------------------------
 
 ### Question 9 : Contains Duplicate
@@ -259,6 +283,24 @@ var reverseWords = function(s) {
 
 **Solution:**
 
+```
+//C++
+
+ListNode* findMiddle(ListNode* head) {
+    ListNode* slow = head;
+    ListNode* fast = head;
+
+    while (fast != NULL && fast->next != NULL) {
+
+      slow = slow->next;         // Movs One Step
+      fast = fast->next->next;  // Moves Two Steps
+    }
+
+    return slow;
+}
+
+```
+
 ----------------------------------------------
 
 ### Question 13 : Reverse Linked List
@@ -269,6 +311,7 @@ var reverseWords = function(s) {
 
 ```
 //C++
+
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
