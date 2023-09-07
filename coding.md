@@ -8,7 +8,7 @@
 **Solution:**
 
 ```
-
+//JS
 var twoSum = function(nums, target) {
     
     for (let i=0; i<nums.length-1; i++) {
@@ -36,6 +36,7 @@ var twoSum = function(nums, target) {
 **Solution:**
 
 ```
+//JS
 var rotateString = function(s, goal) {
         if(s.length!=goal.length) {
                 return false;
@@ -95,6 +96,7 @@ Following is the table showing the comparison:
 **Solution:**
 
 ```
+//JS
 function findDuplicates(str) {
   const charSet = new Set();
   const duplicates = [];
@@ -122,7 +124,7 @@ function findDuplicates(str) {
 **Solution:**
 
 ```
-
+//JS
 // '/\d/': In JavaScript regular expressions, / and / are delimiters used to define a regular expression pattern.
 // '\d': This is a shorthand character class in regular expressions that matches any digit from 0 to 9.
 // The test method checks if the string matches this regular expression and returns true if it does.
@@ -148,6 +150,7 @@ function containsOnlyDigits(str) {
 **Solution:**
 
 ```
+//JS
 var missingNumber = function(nums) {
     for(var i=0; i<=nums.length;i++){
         if(nums.includes(i)==false){
@@ -171,6 +174,7 @@ var missingNumber = function(nums) {
 **Solution:**
 
 ```
+//JS
 var findDuplicate = function(nums) {
     const numsSet = new Set();
     for (let i=0; i<=nums.length; i++) {
@@ -200,6 +204,7 @@ var findDuplicate = function(nums) {
 **Solution:**
 
 ```
+//JS
 var containsDuplicate = function(nums) {
     const numSet = new Set();
     let check= false;
@@ -233,6 +238,7 @@ var containsDuplicate = function(nums) {
 **Solution:**
 
 ```
+//JS
 var reverseWords = function(s) {
 
     let temp = s.split(" ").reverse()
@@ -259,6 +265,28 @@ var reverseWords = function(s) {
 *Given the head of a singly linked list, reverse the list, and return the reversed list.*
 
 **Solution:**
+
+
+```
+//C++
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode* next = NULL;
+        ListNode* prev = NULL; 
+        
+        while(head != NULL) {
+            next = head->next;
+            head->next = prev;
+            prev = head;
+            head = next;
+        }
+        head=prev;
+        return head;
+    }
+};
+
+```
 
 ----------------------------------------------
 ### Question 14 : Remove duplicate nodes in an unsorted linked list
