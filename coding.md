@@ -116,6 +116,7 @@ function findDuplicates(str) {
 ```
 
 ----------------------------------------------
+
 ### Question 5 : Check if a String contains only digits
 
 **Solution:**
@@ -140,39 +141,49 @@ function containsOnlyDigits(str) {
 ```
 
 ----------------------------------------------
+
 ### Question 6 :Missing Number
 
 **Solution:**
+
 ----------------------------------------------
+
 ### Question 7 : Find the Duplicate Number
 
 **Solution:**
+
 ----------------------------------------------
+
 ### Question 8 : Return the largest and the smallest integers in an unsorted integer array
 
 **Solution:**
 
 ----------------------------------------------
+
 ### Question 9 : Contains Duplicate
 
 **Solution:**
 
 ----------------------------------------------
+
 ### Question 10 : Reverse Words in a String
 
 **Solution:**
 
 ----------------------------------------------
+
 ### Question 11 : Design Linked List (Read JDK implementation)
 
 **Solution:**
 
 ----------------------------------------------
+
 ### Question 12 : Middle of the Linked List
 
 **Solution:**
 
 ----------------------------------------------
+
 ### Question 13 : Reverse Linked List
 
 **Solution:**
