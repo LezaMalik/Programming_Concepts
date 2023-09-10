@@ -329,7 +329,7 @@ ListNode* findMiddle(ListNode* head) {
 
 
 ```
-//C++
+//lang: C++
 
 class Solution {
 public:
