@@ -102,7 +102,7 @@ Following is the table showing the comparison:
 **Solution:**
 
 ```
-//JS
+//lang: JS
 
 function findDuplicates(str) {
   const charSet = new Set();
