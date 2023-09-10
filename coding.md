@@ -183,7 +183,7 @@ var missingNumber = function(nums) {
 **Solution:**
 
 ```
-//JS
+//lang: JS
 
 var findDuplicate = function(nums) {
     const numsSet = new Set();
