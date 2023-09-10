@@ -402,6 +402,7 @@ ListNode* findMiddle(ListNode* head) {
 ----------------------------------------------
 
 ### Question 13 : Reverse Linked List
+
 *Given the head of a singly linked list, reverse the list, and return the reversed list.*
 
 **Solution:**
@@ -430,6 +431,7 @@ public:
 ```
 
 ----------------------------------------------
+
 ### Question 14 : Remove duplicate nodes in an unsorted linked list
 
 **Solution:**
