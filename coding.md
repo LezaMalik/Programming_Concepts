@@ -437,6 +437,30 @@ public:
 ```
 //C++
 
+void removeDuplicates(struct Node* start)
+{
+    struct Node *temp1, *temp2, *duplicateNode;
+    temp1 = start;
+ 
+    // Pick elements one by one 
+    while (temp1 != NULL && temp1->next != NULL) {
+        temp2 = temp1;
+ 
+        // Compare the picked element with rest of the elements 
+        while (temp2->next != NULL) {
+
+            /* If duplicate then delete it */
+            if (temp1->data == temp2->next->data) {
+                duplicateNode = temp2->next;
+                temp2->next = temp2->next->next;
+                delete (duplicateNode);
+            }
+            else 
+                temp2 = temp2->next;
+        }
+        temp1 = temp1->next;
+    }
+}
 
 ```
 
