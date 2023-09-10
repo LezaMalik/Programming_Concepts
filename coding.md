@@ -131,7 +131,7 @@ function findDuplicates(str) {
 **Solution:**
 
 ```
-//JS
+//lang: JS
 
 // '/\d/': In JavaScript regular expressions, / and / are delimiters used to define a regular expression pattern.
 // '\d': This is a shorthand character class in regular expressions that matches any digit from 0 to 9.
