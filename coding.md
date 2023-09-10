@@ -291,7 +291,7 @@ var reverseWords = function(s) {
 **Solution:**
 
 ```
-//C++
+//lang: C++
 
 
 ```
@@ -303,7 +303,7 @@ var reverseWords = function(s) {
 **Solution:**
 
 ```
-//C++
+//lang: C++
 
 ListNode* findMiddle(ListNode* head) {
     ListNode* slow = head;
