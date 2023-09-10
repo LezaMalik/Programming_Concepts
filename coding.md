@@ -12,7 +12,7 @@
 **Solution:**
 
 ```
-//JS
+//lang: JS
 
 var twoSum = function(nums, target) {
     
