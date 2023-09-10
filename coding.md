@@ -207,7 +207,7 @@ var findDuplicate = function(nums) {
 **Solution:**
 
 ```
-//JS
+//lang: JS
 
 function findMinMax(arr) {
     if (arr.length === 0) {
@@ -239,7 +239,7 @@ function findMinMax(arr) {
 **Solution:**
 
 ```
-//JS
+//lang: JS
 
 var containsDuplicate = function(nums) {
     const numSet = new Set();
@@ -274,7 +274,7 @@ var containsDuplicate = function(nums) {
 **Solution:**
 
 ```
-//JS
+//lang: JS
 
 var reverseWords = function(s) {
 
