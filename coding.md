@@ -41,7 +41,7 @@ var twoSum = function(nums, target) {
 **Solution:**
 
 ```
-//JS
+//lang: JS
 
 var rotateString = function(s, goal) {
         if(s.length!=goal.length) {
