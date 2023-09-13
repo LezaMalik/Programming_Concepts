@@ -1,5 +1,5 @@
 ## Programming Concepts
-*Following are some of the important programming concepts.*
+*Following are some of the important concepts of programming.*
 
 
 
