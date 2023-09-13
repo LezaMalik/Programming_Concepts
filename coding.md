@@ -1,5 +1,5 @@
 ## Coding Questions
-*Following are some of the important General Coding Questions.*
+*Following are some of the important questions related to general coding.*
 
 
 ### Question 1 : Two Sum
