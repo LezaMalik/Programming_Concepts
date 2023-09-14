@@ -469,3 +469,47 @@ void removeDuplicates(struct Node* start)
 ```
 
 ----------------------------------------------
+
+### Question 15 : Count Primes
+
+*Given an integer n, return the number of prime numbers that are strictly less than n.*
+
+**Solution:**
+
+```
+//lang: JS
+
+var countPrimes = function (n) {
+  
+    let hashArray = new Array(n).fill(true);   // initialize all elements to 'true'
+
+    // Set the first two elements (0 and 1) to 'false' since they are not prime
+    hashArray[0] = false, hashArray[1] = false;
+
+    // Iterate from 2 to the square root of 'n'
+    for (let i = 2; i * i < n; i++) {
+        // For each 'i', iterate through multiples of 'i' starting from 'i^2'
+        for (let j = i * i; j < n; j += i) {
+            // Mark the multiples of 'i' as 'false' in the 'hashArray'
+            hashArray[j] = false;
+        }
+    }
+
+    return hashArray.filter((num) => num == true).length;
+};
+
+```
+
+*Explanation:*
+
+* Create a List: Begin by creating a list of consecutive integers from 2 to n: [2, 3, 4, ..., n].
+
+* Start with the First Prime: The first prime number is 2. Mark it as a prime and start with it.
+
+* Eliminate Multiples: For each prime number p, iterate through the list and eliminate all multiples of p greater than p. To do this, mark numbers like 2 * p, 3 * p, 4 * p, etc., as non-prime.
+
+* Find the Next Unmarked Number: Find the smallest unmarked number in the list that is greater than the current prime number p. This will be the next prime number.
+
+* Repeat: Repeat steps 3 and 4 until the square of the current prime number is greater than n. At this point, all remaining unmarked numbers in the list are prime.
+
+* Result: The remaining unmarked numbers in the list are all prime numbers less than or equal to n.
