@@ -513,3 +513,22 @@ var countPrimes = function (n) {
 * Repeat: Repeat steps 3 and 4 until the square of the current prime number is greater than n. At this point, all remaining unmarked numbers in the list are prime.
 
 * Result: The remaining unmarked numbers in the list are all prime numbers less than or equal to n.
+
+
+----------------------------------------------
+
+### Question 16 : 
+
+*Given *
+
+**Solution:**
+
+----------------------------------------------
+
+### Question 17 : 
+
+*Given *
+
+**Solution:**
+
+----------------------------------------------
