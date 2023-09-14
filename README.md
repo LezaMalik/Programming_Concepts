@@ -13,3 +13,5 @@ Following are some of the important concepts of programming with detailed explan
 4. [Linux Commands](https://github.com/LezaMalik/Int_2023/blob/main/README.md)
 
 5. [Coding Questions](coding.md)
+
+6. [Data Structures Questions](algo-ds.md)
