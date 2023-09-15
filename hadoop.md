@@ -26,7 +26,7 @@ It's important to note that the CAP theorem doesn't mean that distributed system
 ![cap picture](./assets/cap.jpg)
 
 
-The CAP theorem categorizes systems into three categories:
+The CAP theorem categorizes systems into three categories as shown in the image above: 
 
 1. CA (Consistency and Availability)
     * The system prioritizes availability over consistency and can respond with possibly stale data.
