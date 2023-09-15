@@ -15,3 +15,5 @@ Following are some of the important concepts of programming with detailed explan
 5. [Coding Questions](coding.md)
 
 6. [Data Structures Questions](algo-ds.md)
+
+7. [Hadoop Questions](hadoop.md)
