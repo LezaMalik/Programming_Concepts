@@ -49,18 +49,70 @@ The CAP theorem categorizes systems into three categories:
 ----------------------------------------------
 
 ### 2. What's Hadoop?
+
+Hadoop is an open-source framework for distributed storage and processing of large datasets. It was originally developed by Doug Cutting and Mike Cafarella and is now maintained by the Apache Software Foundation. Hadoop is designed to handle massive amounts of data and process it in a distributed and fault-tolerant manner. It has become a cornerstone technology for big data analytics and processing.
+
+Key components of the Hadoop ecosystem include:
+
+1. Hadoop Distributed File System (HDFS): HDFS is a distributed file system that stores data across multiple machines. It is designed to provide high-throughput access to data and to replicate data across nodes to ensure fault tolerance. HDFS is the storage layer of Hadoop.
+
+2. MapReduce: MapReduce is a programming model and processing engine for distributed data processing. It allows developers to write programs that can process vast amounts of data in parallel across a Hadoop cluster. The MapReduce model consists of two main steps: a "Map" step for processing and filtering data and a "Reduce" step for aggregating and summarizing the results.
+
+3. YARN (Yet Another Resource Negotiator): YARN is the resource management and job scheduling component of Hadoop. It enables multiple data processing frameworks, including MapReduce, to share and manage cluster resources efficiently. This flexibility allows Hadoop to support a variety of data processing workloads beyond MapReduce.
+
+4. Hadoop Common: This includes libraries, utilities, and APIs that support the other components of the Hadoop ecosystem. It provides a set of common tools and utilities that are used by various Hadoop modules.
+
+5. Hadoop Ecosystem Projects: Hadoop has a rich ecosystem of related projects and tools that extend its functionality. Some popular ones include Apache Hive (for SQL-like querying of data), Apache Pig (for data transformation and analysis), Apache HBase (a NoSQL database), Apache Spark (a fast, in-memory data processing engine), and Apache Kafka (a distributed messaging system), among many others.
+
+Hadoop is known for its scalability, fault tolerance, and the ability to handle large volumes of data across clusters of commodity hardware. It has been widely adopted in industries such as finance, healthcare, retail, and more for tasks like log processing, data warehousing, and large-scale data analytics.
+
+
+----------------------------------------------
+
+
 ### 3. Which Hadoop Distribution have you used?
+
+----------------------------------------------
+
 ### 4. Which Hadoop version have you used?
+----------------------------------------------
+
+
 ### 5. Have you created your own Hadoop cluster? and how?
+----------------------------------------------
+
 ### 6. What are some Hadoop components?
+----------------------------------------------
+
 ### 7. What's MapReduce?
+----------------------------------------------
+
 ### 8. Compare mapper and reducer
+----------------------------------------------
+
 ### 9. What does Mapreduce partitioner do?
+----------------------------------------------
+
 ### 10. What's a combiner? Why?
+----------------------------------------------
+
 ### 11. What is distcp?
+----------------------------------------------
+
 ### 12. How distcp works?
+----------------------------------------------
+
 ### 13. What's data locality
+----------------------------------------------
+
 ### 14. What is metadata in hdfs?
+----------------------------------------------
+
 ### 15. What is hive
+----------------------------------------------
+
 ### 16. What is partition in hive
+----------------------------------------------
+
 ### 17. What is heartbeat in hdfs
+----------------------------------------------
