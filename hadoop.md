@@ -112,24 +112,31 @@ These are just some of the core components of the Hadoop ecosystem. There are ma
 ----------------------------------------------
 
 ### 7. What's MapReduce?
+
 ----------------------------------------------
 
 ### 8. Compare mapper and reducer
+
 ----------------------------------------------
 
 ### 9. What does Mapreduce partitioner do?
+
 ----------------------------------------------
 
 ### 10. What's a combiner? Why?
+
 ----------------------------------------------
 
 ### 11. What is distcp?
+
 ----------------------------------------------
 
 ### 12. How distcp works?
+
 ----------------------------------------------
 
 ### 13. What's data locality
+
 ----------------------------------------------
 
 ### 14. What is metadata in hdfs?
