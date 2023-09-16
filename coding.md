@@ -360,7 +360,7 @@ void Linkedlist::insertNode(int data)
 }
   
 // Function to print the nodes of the linked list.
-void Linkedlist::printList()
+void linkedlist::printList()
 {
     Node* temp = head;
   
@@ -436,7 +436,7 @@ public:
 
 ----------------------------------------------
 
-### Question 14 : Remove duplicate nodes in an unsorted linked list
+### Question 14 : Remove duplicate nodes in an unsorted linked list.
 
 **Solution:**
 
