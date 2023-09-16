@@ -492,7 +492,7 @@ var countPrimes = function (n) {
     for (let i = 2; i * i < n; i++) {
         // For each 'i', iterate through multiples of 'i' starting from 'i^2'
         for (let j = i * i; j < n; j += i) {
-            // Mark the multiples of 'i' as 'false' in the 'hashArray'
+            // Mark the multiples of i as 'false' in the 'hashArray'
             hashArray[j] = false;
         }
     }
