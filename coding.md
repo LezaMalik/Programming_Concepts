@@ -504,7 +504,7 @@ var countPrimes = function (n) {
 
 *Explanation:*
 
-* Create a List: Begin by creating a list of consecutive integers from 2 to n: [2, 3, 4, ..., n].
+* Create a List: Begin by creating a list of consecutive integers from 2 to n: [2, 3, 4, .., n].
 
 * Start with the First Prime: The first prime number is 2. Mark it as a prime and start with it.
 
@@ -549,5 +549,7 @@ var isPalindrome = function(s) {
 *Given *
 
 **Solution:**
+
+
 
 ----------------------------------------------
