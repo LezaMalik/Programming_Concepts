@@ -48,7 +48,7 @@ The CAP theorem categorizes systems into three categories as shown in the image 
 
 ----------------------------------------------
 
-### 2. What's Hadoop?
+### 2. What is Hadoop?
 
 Hadoop is an open-source framework for distributed storage and processing of large datasets. It was originally developed by Doug Cutting and Mike Cafarella and is now maintained by the Apache Software Foundation. Hadoop is designed to handle massive amounts of data and process it in a distributed and fault-tolerant manner. It has become a cornerstone technology for big data analytics and processing.
 
