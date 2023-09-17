@@ -111,7 +111,7 @@ These are just some of the core components of the Hadoop ecosystem. There are ma
 
 ----------------------------------------------
 
-### 7. What's MapReduce?
+### 7. What is MapReduce?
 
 ----------------------------------------------
 
