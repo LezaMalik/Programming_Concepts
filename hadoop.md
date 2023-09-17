@@ -14,7 +14,7 @@ The CAP theorem states that in a distributed system, you can have at most two ou
 
 3. Partition Tolerance (P): The system continues to function even in the presence of network partitions or communication failures between nodes. In a distributed system, network partitions can occur when some nodes are unable to communicate with others.
 
-The CAP theorem implies that when a network partition occurs (P), you have to choose between maintaining consistency (C) or availability (A). In other words:
+The CAP theorem implies that when a network partition occurs (P), you have to choose between maintaining consistency (C) or availability (A). In other words :
 
 * If you prioritize Consistency and want all nodes to have the most recent data, you may have to sacrifice Availability during network partitions.
 
