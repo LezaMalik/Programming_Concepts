@@ -165,6 +165,24 @@ In summary, mappers handle the initial processing of input data, breaking it dow
 
 ### 9. What does Mapreduce partitioner do?
 
+In the MapReduce framework, a partitioner is a component responsible for determining which reducer will receive the intermediate key-value pairs produced by the mappers. It plays a crucial role in the distribution of data to reducer tasks, ensuring that related data is sent to the same reducer. The primary purpose of a partitioner is load balancing and optimizing the performance of the MapReduce job.
+
+Here's how the MapReduce partitioner works:
+
+* Mapping Phase: During the mapping phase of a MapReduce job, mappers generate intermediate key-value pairs. Each key is associated with a specific value or set of values.
+
+* Shuffle and Sort Phase: After the mapping phase, the intermediate key-value pairs are sorted and grouped by their keys. This step is essential to bring together all values associated with a particular key.
+
+* Partitioning: The partitioner takes the sorted and grouped key-value pairs and decides which reducer should receive each key. It uses a hashing or custom logic based on the key to make this determination. The goal is to evenly distribute the data across the reducer tasks to ensure that they have a similar amount of work to do.
+
+* Reducer Assignment: Once the partitioner has assigned keys to reducers, the MapReduce framework sends the key-value pairs to their respective reducers for further processing. Each reducer is responsible for processing a subset of the data associated with specific keys.
+
+* Parallel Processing: Reducers work in parallel, independently processing the data assigned to them. This parallelism is a key feature of MapReduce, as it allows for efficient processing of large datasets across multiple nodes in a distributed computing cluster.
+
+The choice of a good partitioner function is essential for optimizing the performance of a MapReduce job. A well-designed partitioner ensures that the workload is evenly distributed among reducers, preventing data skew and reducing the chances of some reducers becoming bottlenecks.
+
+By distributing the data effectively to reducers, the partitioner helps achieve load balancing, reduces data transfer overhead, and ensures efficient resource utilization in a MapReduce cluster. Different partitioning strategies can be employed based on the specific characteristics of the data and the use case to improve the overall performance of the MapReduce job.
+
 ----------------------------------------------
 
 ### 10. What's a combiner? Why?
