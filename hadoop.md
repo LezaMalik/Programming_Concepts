@@ -187,9 +187,53 @@ By distributing the data effectively to reducers, the partitioner helps achieve 
 
 ### 10. What's a combiner? Why?
 
+A combiner, in the context of MapReduce and distributed data processing, is a function or mini-reducer that operates on the output of the mapper phase before the data is sent over the network to the reducer tasks. The primary purpose of a combiner is to perform local aggregation and reduction of data in order to minimize data transfer and improve the efficiency of a MapReduce job.
+
+Here's why combiners are used and their key benefits:
+
+* Reduction of Data Transfer: Combiners reduce the amount of data that needs to be transferred over the network from the mappers to the reducers. By aggregating and summarizing data locally on each mapper node, a combiner can significantly reduce the volume of intermediate key-value pairs that need to be transmitted. This reduces network congestion and speeds up data processing, especially in scenarios with limited bandwidth.
+
+* Improved Performance: Combiners can lead to faster job execution because they reduce the amount of data that the reducer phase needs to process. Smaller data volumes are processed more efficiently, leading to quicker job completion times. This is especially beneficial in large-scale data processing tasks where data transfer can become a bottleneck.
+
+* Lower Resource Usage: With combiners, the reducer tasks receive smaller input datasets, which results in reduced memory and processing requirements for reducers. This can lead to improved overall cluster resource utilization, allowing for more parallelism and accommodating larger MapReduce jobs on the same cluster.
+
+* Reduced Disk I/O: Combiners can help minimize disk I/O, as they reduce the amount of intermediate data that is written to disk by the mappers and read by the reducers. This is beneficial for both local disk I/O and network I/O.
+
+* Custom Aggregation: Combiners allow for custom aggregation and reduction logic tailored to the specific requirements of the MapReduce job. This means you can apply specific business logic to locally aggregate data on each mapper node.
+
+It's important to note that while combiners can improve the efficiency and performance of a MapReduce job, they are not always applicable. They are most effective when the reduce operation is both commutative and associative (meaning the order of input data does not affect the result), as the output of the combiner may not be the same as the output of the reducer in all cases. Additionally, the use of combiners should not change the final result of the MapReduce job; they should only optimize the intermediate data transfer and processing.
+
 ----------------------------------------------
 
 ### 11. What is distcp?
+distcp, short for Distributed Copy, is a command-line tool in the Hadoop ecosystem that is used for efficiently copying large volumes of data between Hadoop Distributed File System (HDFS) clusters or from HDFS to other file systems, such as local file systems or remote file systems. It's a valuable utility for tasks involving data migration, backup, replication, or synchronization within a Hadoop environment.
+
+Here are some key features and use cases of distcp:
+
+* Parallel Data Transfer: distcp is designed to perform parallel data transfers, which means it can copy data in parallel across multiple nodes or clusters, making it faster and more efficient for large-scale data copying.
+
+* Preservation of File Attributes: distcp can preserve various file attributes, including permissions, timestamps, and ownership, during the copying process. This ensures that the copied data retains its original characteristics.
+
+* Atomic Copy: distcp aims to provide an atomic copy operation, which means that if the copying process fails for any reason, it should not leave partially copied or inconsistent data in the destination. Either the copy operation succeeds in full, or it fails without affecting the existing data.
+
+* Support for Different File Systems: While distcp is commonly used for copying data within HDFS clusters, it can also copy data to and from other file systems, such as Amazon S3, Azure Data Lake Storage, and Google Cloud Storage, using their respective connectors.
+
+* Efficient Copying: distcp optimizes data copying by minimizing network traffic. It achieves this by only copying the differences (delta) between the source and destination files. This is particularly useful for incremental backups and data synchronization.
+
+* Cross-Cluster Data Migration: It's often used when you need to move data from one Hadoop cluster to another, which could be located in a different geographical region or managed by a different organization.
+
+* Data Replication: distcp can be used to replicate data across multiple HDFS clusters, enhancing data availability and fault tolerance.
+
+Here's a basic example of using distcp to copy data from one HDFS location to another:
+
+```
+hadoop distcp hdfs://source-cluster/source-path hdfs://destination-cluster/destination-path
+```
+
+In this command, source-cluster and destination-cluster are the HDFS cluster URIs, and source-path and destination-path are the source and destination directories, respectively.
+
+distcp is a versatile and powerful tool in the Hadoop ecosystem, allowing data engineers and administrators to efficiently manage and transfer large datasets across distributed environments.
+
 
 ----------------------------------------------
 
