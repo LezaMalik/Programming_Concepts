@@ -45,7 +45,7 @@ The CAP theorem categorizes systems into three categories as shown in the image 
            
     * Example databases: Apache HBase, MongoDB, Redis
 
-
+ 
 ---------------------------------------------- 
 
 ### 2. What is Hadoop?
