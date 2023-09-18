@@ -20,7 +20,7 @@ The CAP theorem implies that when a network partition occurs (P), you have to ch
 
 * If you prioritize Availability and want the system to remain responsive even in the presence of network partitions, you may have to sacrifice Consistency, meaning that different nodes may temporarily see different versions of the data.
 
-It's important to note that the CAP theorem doesn't mean that distributed systems can only have two of these properties at all times. Instead, it highlights the trade-offs that must be made in designing and operating distributed systems, particularly in scenarios where network partitions are a possibility.
+It's important to note that the CAP theorem doesn't mean that distributed systems can only have two of these properties at all times. Instead, it highlights the trade-offs that must be made in designing and operating distributed systems, particularly in scenarios where network partitions are a possibility.  
 
 
 ![cap picture](./assets/cap.jpg)
