@@ -113,13 +113,15 @@ These are just some of the core components of the Hadoop ecosystem. There are ma
 
 ### 7. What is MapReduce?
 
-MapReduce is a programming model and processing framework that was popularized by Google for processing and generating large datasets that can be distributed across a cluster of computers. It is designed to process vast amounts of data in parallel across a distributed computing infrastructure efficiently. MapReduce consists of two main phases: the Map phase and the Reduce phase.
+MapReduce is a programming model and processing framework that was popularized by Google for processing and generating large datasets that can be distributed across a cluster of computers. It is designed to process vast amounts of data in parallel across a distributed computing infrastructure efficiently. 
 
-Map Phase: During the Map phase, the input data is divided into smaller chunks, and each chunk is processed independently by a set of worker nodes. Each worker node applies a user-defined function called the "mapper" to this data, generating a set of key-value pairs as intermediate outputs. This phase is responsible for breaking down the problem into smaller tasks and extracting relevant information.
+MapReduce consists of two main phases: the Map phase and the Reduce phase.
 
-Shuffle and Sort: After the Map phase, the intermediate key-value pairs are sorted and grouped based on their keys. This step ensures that all values associated with a particular key are brought together and ready for the next phase.
+* Map Phase: During the Map phase, the input data is divided into smaller chunks, and each chunk is processed independently by a set of worker nodes. Each worker node applies a user-defined function called the "mapper" to this data, generating a set of key-value pairs as intermediate outputs. This phase is responsible for breaking down the problem into smaller tasks and extracting relevant information.
 
-Reduce Phase: In the Reduce phase, another user-defined function called the "reducer" is applied to each group of intermediate key-value pairs. The reducer combines, aggregates, or analyzes the data based on the keys to produce the final output. This phase is responsible for summarizing and processing the data generated in the Map phase.
+* Shuffle and Sort: After the Map phase, the intermediate key-value pairs are sorted and grouped based on their keys. This step ensures that all values associated with a particular key are brought together and ready for the next phase.
+
+* Reduce Phase: In the Reduce phase, another user-defined function called the "reducer" is applied to each group of intermediate key-value pairs. The reducer combines, aggregates, or analyzes the data based on the keys to produce the final output. This phase is responsible for summarizing and processing the data generated in the Map phase.
 
 MapReduce is particularly well-suited for distributed data processing tasks because it can scale horizontally, allowing it to handle massive datasets by adding more processing nodes to the cluster. It also provides fault tolerance by replicating data across nodes, ensuring that even if a node fails, the data and processing can continue on other nodes.
 
