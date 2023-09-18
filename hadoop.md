@@ -239,6 +239,34 @@ distcp is a versatile and powerful tool in the Hadoop ecosystem, allowing data e
 
 ### 12. How distcp works?
 
+distcp (Distributed Copy) in Hadoop is a tool used for efficiently copying large volumes of data between Hadoop Distributed File System (HDFS) clusters or within the same cluster. It operates in a parallel and distributed manner, which makes it suitable for handling big data scenarios. 
+
+Here's an overview of how distcp works:
+
+1. Distributed Execution: distcp leverages the distributed nature of Hadoop by running multiple map tasks in parallel. Each map task is responsible for copying a portion of the data.
+
+2. Input and Output Paths: You specify the source and destination paths when you run distcp. These paths can point to directories, files, or even subsets of files within directories.
+
+3. Path Expansion: distcp recursively expands the source path to include all the files and directories within it. It then creates a list of files and directories to be copied.
+
+4. Mapping Phase: distcp starts the mapping phase, where it assigns each file or directory in the list to a separate map task. Each map task is responsible for copying a specific file or directory.
+
+5. Copying Data: The map tasks copy data from the source to the destination. They do this by reading data from the source file or directory and writing it to the destination location. Data is transferred block by block, which allows parallelism and efficient data transfer.
+
+6. Parallel Execution: Multiple map tasks run simultaneously, copying data in parallel. This parallelism speeds up the copying process significantly, especially when dealing with large datasets.
+
+7. Preserving Metadata: distcp ensures that the metadata of the copied files and directories (e.g., permissions, timestamps, ownership) are preserved as closely as possible to the source.
+
+8. Atomicity: distcp aims for an atomic copy operation, which means that if any map task fails during the copy operation, it will not leave the destination in an inconsistent state. The copying process either succeeds in full or fails without affecting the destination.
+
+9. Reporting Progress: distcp provides progress reporting so that you can monitor the status of the copying operation. It shows the number of files and data blocks copied, the percentage of completion, and any errors encountered.
+
+10. Completion and Cleanup: Once all map tasks have completed their copying tasks, distcp finishes the job. It ensures that all data is successfully copied to the destination.
+
+11. Verification: After the copying process, distcp can perform an optional verification step to ensure that the data in the source and destination matches. This is particularly useful for data integrity checks.
+
+In summary, distcp works by parallelizing the copy operation across multiple map tasks, ensuring efficient and reliable data transfer while preserving metadata and maintaining atomicity. It is a valuable tool for moving or replicating data within and between HDFS clusters, facilitating data migration, backup, and synchronization tasks in distributed computing environments.
+
 ----------------------------------------------
 
 ### 13. What's data locality
