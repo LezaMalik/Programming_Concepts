@@ -269,7 +269,16 @@ In summary, distcp works by parallelizing the copy operation across multiple map
 
 ----------------------------------------------
 
-### 13. What's data locality
+### 13. What's data locality?
+Data locality refers to the concept of keeping data that is frequently accessed or used together physically close to each other in a computer system. It is an important principle in computer science and computer architecture, particularly for optimizing the performance of data-intensive applications.
+
+Data locality can be understood in two main contexts:
+
+1. Spatial Locality: This aspect of data locality is concerned with storing and accessing data that is physically close to each other in memory. When a program accesses a particular piece of data, it often accesses nearby data in memory as well. Spatial locality is exploited by memory management techniques like caching, where frequently accessed data is stored in a smaller and faster memory (cache) that is closer to the CPU, reducing the time it takes to fetch the data.
+
+2. Temporal Locality: Temporal locality refers to the idea that if a piece of data is accessed once, it is likely to be accessed again in the near future. This principle is used in caching as well, where recently accessed data is retained in the cache, so that if the program requests it again, it can be quickly retrieved.
+
+Data locality is particularly important in optimizing the performance of computer systems, especially for applications that require fast and efficient data access, such as databases, scientific simulations, and video games. By improving data locality, a system can reduce the latency associated with accessing data from slower storage devices like hard drives or remote servers, leading to faster and more responsive applications.
 
 ----------------------------------------------
 
