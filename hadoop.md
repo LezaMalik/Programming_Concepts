@@ -411,6 +411,31 @@ These benefits have made Hadoop a fundamental component of many big data and dat
 ----------------------------------------------
 
 ### 19. What is the role of YARN in Hadoop?
+Apache Hadoop YARN (Yet Another Resource Negotiator) is a resource management and job scheduling component in the Hadoop ecosystem. It plays a critical role in the efficient utilization of cluster resources and enables the processing of various data workloads, including MapReduce, Apache Spark, and other distributed computing frameworks. 
+
+Here are the key roles and responsibilities of YARN in Hadoop:
+
+* Resource Management: YARN is responsible for managing and allocating cluster resources, such as CPU and memory, among various applications and tasks running in the cluster. It ensures that resources are distributed efficiently and fairly among competing workloads.
+
+* Cluster Resource Negotiation: When a user submits a job or application to the cluster, YARN negotiates the resources required by the application with the ResourceManager (RM). The ResourceManager is the central authority that manages resource allocation.
+
+* Application Lifecycle Management: YARN manages the lifecycle of applications, including job submission, resource allocation, execution, monitoring, and cleanup. It keeps track of the status and progress of applications and provides this information to users and administrators.
+
+* NodeManager: Each node in the Hadoop cluster runs a NodeManager process. The NodeManager is responsible for monitoring the resource utilization on that node, managing containers, and reporting resource availability and health back to the ResourceManager.
+
+* Containerization: YARN uses the concept of containers to encapsulate and isolate the resources allocated to individual tasks or application components. Containers ensure that different tasks running on the same node do not interfere with each other's resource usage.
+
+* Multi-Tenancy: YARN supports multi-tenancy, allowing multiple users and applications to coexist on the same cluster without resource contention. It enforces resource quotas and priorities to maintain fairness among users and applications.
+
+* Pluggable Scheduler: YARN's resource allocation and scheduling are achieved through pluggable schedulers. The default scheduler is the CapacityScheduler, which supports capacity allocation and queues for workload management. Other schedulers like the FairScheduler are also available to suit different use cases.
+
+* Compatibility and Extensibility: YARN is designed to be compatible with various data processing frameworks and applications beyond MapReduce. This extensibility allows Hadoop clusters to run a diverse set of workloads, including batch processing, real-time processing, and machine learning.
+
+* Resource Isolation: YARN provides resource isolation at the container level. This means that even if an application misbehaves or consumes excessive resources, it will not impact other applications running on the same cluster.
+
+* Dynamic Resource Allocation: YARN supports dynamic resource allocation, allowing applications to request additional resources based on their needs as they run. This helps optimize resource utilization and improves cluster efficiency.
+
+In summary, YARN is a fundamental component of the Hadoop ecosystem that manages cluster resources and coordinates the execution of various data processing workloads. It enhances the overall flexibility, scalability, and resource utilization of Hadoop clusters, making them suitable for a wide range of big data processing tasks.
 
 ----------------------------------------------
 
