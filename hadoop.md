@@ -648,12 +648,113 @@ Creating a table in Hive involves defining the table's schema and specifying its
 
 ### What is the difference between an external table and a managed table in Hive?
 
+1. Managed Table:
+
+    * Data Management: In a managed table (also known as an internal table), Hive assumes full control over the data. When you create a managed table, Hive creates a directory in HDFS to store the table's data. Hive is responsible for data storage and maintenance.
+
+    * Data Retention: When you drop a managed table, Hive also deletes the associated data stored in HDFS. Hive manages the data's lifecycle, and dropping the table effectively removes both the table structure and its data.
+
+    * Usage: Managed tables are suitable when Hive is the primary data store, and you want Hive to manage data lifecycle, including storage and cleanup.
+
+    * Example: 
+    ```
+    CREATE TABLE managed_table (
+        id INT,
+        name STRING
+    );
+    ```
+
+2. External Table:
+
+    * Data Management: An external table, on the other hand, does not manage the data files itself. When you create an external table, you specify the location of the data in HDFS or another file system. Hive only manages the table's metadata and schema but doesn't assume control over the data files.
+
+    * Data Retention: Dropping an external table in Hive does not delete the underlying data files. The data files remain intact in the specified location. This makes external tables suitable when you want to share data between different systems or preserve data even if the table definition is removed.
+
+    * Usage: External tables are often used when the data is already stored externally, and you want to make it accessible through Hive without copying or moving the data. They are also useful when you want to share data with other systems or applications.
+
+    * Example: 
+    ```
+    CREATE EXTERNAL TABLE external_table (
+        id INT,
+        name STRING
+    )
+    LOCATION '/user/hive/warehouse/external_data/';
+
+    ```
+
+
+In summary, the key differences between managed tables and external tables in Hive are related to data management and retention:
+
+* Managed tables have Hive manage both metadata and data storage, while external tables have Hive manage only metadata and rely on external data files.
+* Dropping a managed table deletes both metadata and data, while dropping an external table only removes metadata, leaving the data files intact.
+* Managed tables are suitable when you want Hive to control data storage and lifecycle, while external tables are useful when you want to work with data that is stored externally or shared with other systems.
+
 ----------------------------------------------
 
 ### How do you load data into a Hive table from a file?
+
+You can load data into a Hive table from a file using various methods and HiveQL statements. The method you choose depends on the format of your data file and whether you're working with a managed or external table. Here are some common ways to load data into a Hive table:
+
+1. Using LOAD DATA for Managed Tables:
+
+    If you have a managed (internal) Hive table, you can use the LOAD DATA statement to copy data from an external file or directory into the table. The data will be moved to the Hive warehouse directory.
+
+    ```
+    LOAD DATA LOCAL INPATH 'local_file_path' INTO TABLE your_managed_table;
+    ```
+    * LOCAL INPATH: Specifies the local file path of the data to be loaded.
+    * INTO TABLE: Specifies the target managed table.
+
+2. Using INSERT INTO for Managed Tables:
+
+    If you have a managed table and want to insert data into it from another table or query result, you can use the INSERT INTO statement.
+
+    ```
+    INSERT INTO TABLE your_managed_table
+    SELECT * FROM another_table;
+    ```
+    * INSERT INTO TABLE: Specifies the target managed table.
+    * SELECT * FROM: Specifies the source data.
+
+
+3. Using LOAD DATA for External Tables:
+
+    For external tables, you can use the LOAD DATA statement to copy data into the table. Unlike managed tables, data remains in its original location, and Hive only manages the metadata.
+
+    ```
+    LOAD DATA LOCAL INPATH 'local_file_path' OVERWRITE INTO TABLE your_external_table;
+    ```
+    
+    * LOCAL INPATH: Specifies the local file path of the data to be loaded.
+    * OVERWRITE INTO TABLE: Specifies the target external table and overwrites existing data if needed.
+
+4. Using INSERT OVERWRITE for External Tables:
+
+    To insert data into an external table, you can use the INSERT OVERWRITE statement, which overwrites the existing data in the external table.
+
+    ```
+    INSERT OVERWRITE TABLE your_external_table
+    SELECT * FROM another_table;
+    ```
+
+    * INSERT OVERWRITE TABLE: Specifies the target external table.
+    * SELECT * FROM: Specifies the source data.
+
+5. Using Hadoop File Operations:
+
+    You can also use Hadoop file operations (e.g., Hadoop DistCp) to move or copy data into the HDFS location associated with your Hive table, especially for external tables. Afterward, Hive can access the data as an external table.
+
+    ```
+    hadoop fs -copyFromLocal local_file_path hdfs_path
+    ```
+    Once the data is in the appropriate HDFS location, you can create or refresh the external table's metadata in Hive.
+
+The method you choose will depend on whether you're working with managed or external tables and whether you want to load data from local files or other tables.
+
 ----------------------------------------------
 
 ### What is the purpose of the Hive SerDe?
+
 ----------------------------------------------
 
 ### How do you run a Hive query from the command line?
