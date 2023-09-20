@@ -755,22 +755,62 @@ The method you choose will depend on whether you're working with managed or exte
 
 ### What is the purpose of the Hive SerDe?
 
+The Hive SerDe (Serializer/Deserializer) plays a crucial role in Hive when it comes to handling different data formats. It serves as an interface between Hive and various data formats, allowing Hive to read, write, and process data in different structures and encodings. The primary purpose of a Hive SerDe is to facilitate the mapping of data between Hive tables and external data sources, which can have diverse formats, including CSV, JSON, Avro, Parquet, and more. 
+
+Here are the key purposes and functions of a Hive SerDe:
+
+* Data Serialization: A SerDe is responsible for serializing (converting) Hive's internal data representation into an external format. This process enables Hive to write data to external storage systems or files in a format that can be understood by other tools or applications.
+
+* Data Deserialization: Conversely, a SerDe deserializes (converts) external data into Hive's internal format, making it possible for Hive to read and process data in its native query language, HiveQL.
+
+* Format Transformation: The Hive SerDe allows Hive to work with data in formats beyond the default supported types (e.g., delimited text). It transforms data between the Hive internal format (typically a row or columnar format) and the custom format of the external data source.
+
+* Schema Evolution: For some data formats, like Avro and Parquet, SerDes can handle schema evolution gracefully. This means that changes to the data structure over time can be accommodated without breaking existing Hive tables.
+
+* Data Type Conversion: It manages the conversion of data types between Hive's type system and the types supported by the external data format. This is crucial for ensuring data consistency and compatibility.
+
+* Data Processing: SerDes enable Hive to process and query data stored in various formats. For example, you can use Hive to query JSON data in a table, and the SerDe will ensure that the data is properly serialized and deserialized.
+
+* Custom SerDes: Hive allows users to develop custom SerDes to support proprietary or uncommon data formats. This extensibility makes Hive adaptable to a wide range of data sources.
+
+* Performance Optimization: Some SerDes are optimized for specific file formats (e.g., ORC, Parquet), which can improve query performance by storing data more efficiently and enabling predicate pushdown.
+
+In summary, the Hive SerDe is a critical component that bridges the gap between Hive's structured query language and various external data formats. It ensures that Hive can read, write, and process data in diverse formats, making it a versatile tool for working with big data stored in different encodings and structures.
+
 ----------------------------------------------
 
 ### How do you run a Hive query from the command line?
+
+You can run a Hive query from the command line by using the hive command-line interface (CLI). Here are the steps to run a Hive query from the command line:
+
+1. Open a Terminal or Command Prompt: 
+    Open a terminal or command prompt on your system and write ```hive``` to launch the Hive CLI.
+
+2. Enter Your Hive Query: 
+    Now that you're in the Hive CLI, you can enter your Hive query. For example, if you want to run a simple query like selecting data from a table, you can do the following:
+
+    ```
+    SELECT * FROM your_table_name;
+    ```
+3. Execute the Query: 
+    After entering your query, press Enter. Hive will process the query and display the results if it's a SELECT query or provide status updates for other types of queries.
 ----------------------------------------------
 
 ### How do you perform a JOIN operation in Hive?
+
 ----------------------------------------------
 
 ### What is the purpose of the Hive bucketing feature?
+
 ----------------------------------------------
 
 ### How do you enable dynamic partitioning in Hive?
 ----------------------------------------------
 
 ### What is the difference between the WHERE clause and HAVING clause in Hive?
+
 ----------------------------------------------
 
 ### How can you insert data into a Hive table from the result of a query?
+
 ----------------------------------------------
