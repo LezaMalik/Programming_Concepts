@@ -992,5 +992,42 @@ In summary, the main difference is that the WHERE clause filters individual rows
 ----------------------------------------------
 
 ### How can you insert data into a Hive table from the result of a query?
+You can insert data into a Hive table from the result of a query using the INSERT INTO statement. This allows you to populate a table with the results of a SELECT query or the output of another table. Here's the basic syntax to achieve this in Hive:
+
+```
+INSERT INTO TABLE target_table
+[PARTITION (partition_column1=value, partition_column2=value, ...)]
+SELECT * FROM source_table
+[WHERE condition];
+
+```
+Here's an explanation of the elements in the syntax:
+
+* INSERT INTO TABLE target_table: Specifies the target table where you want to insert the data.
+* [PARTITION (partition_column1=value, partition_column2=value, ...)]: Optional. If the target table is partitioned, you can specify the partition columns and their values to insert data into a specific partition. Omit this part if you're inserting data into a non-partitioned table.
+* SELECT * FROM source_table: Specifies the source data for the insert operation. You can use a SELECT statement to retrieve data from another table or apply any query conditions as needed.
+* [WHERE condition]: Optional. You can include a WHERE clause to filter the data you want to insert into the target table based on specific conditions.
+
+
+
+Here's an example of how to insert data into a Hive table from the result of a query:
+
+```
+-- Insert all records from source_table into target_table
+INSERT INTO TABLE target_table
+SELECT * FROM source_table;
+```
+
+
+If the target table is partitioned, you can insert data into a specific partition:
+```
+-- Insert data into a specific partition of target_table
+INSERT INTO TABLE target_table
+PARTITION (partition_column1='value', partition_column2='value')
+SELECT * FROM source_table
+WHERE condition;
+```
+
+This method is useful when you want to transform or filter data from one table and insert it into another table or partition within Hive, allowing you to perform various data processing and manipulation tasks.
 
 ----------------------------------------------
