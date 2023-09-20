@@ -953,6 +953,41 @@ Dynamic partitioning simplifies the process of managing partitions, especially w
 ----------------------------------------------
 
 ### What is the difference between the WHERE clause and HAVING clause in Hive?
+In Hive, the WHERE clause and HAVING clause are both used to filter rows in a query, but they serve different purposes and are applied at different stages of query processing. Here are the key differences between the two:
+
+1. WHERE Clause:
+
+    * Applied to Rows: The WHERE clause is used to filter rows from the result set based on a condition that is applied to individual rows before any grouping is done.
+
+    * Used with SELECT, UPDATE, and DELETE: The WHERE clause is typically used with the SELECT, UPDATE, and DELETE statements to filter rows from a table before or after grouping.
+
+    * Example:
+        ```
+        SELECT column1, column2
+        FROM table_name
+        WHERE condition;
+         ```
+
+    * Usage: You use the WHERE clause when you want to filter rows based on individual column values, regardless of any aggregation or grouping.
+    
+
+2. HAVING Clause:
+
+    * Applied to Groups: The HAVING clause is used to filter groups of rows (resulting from a GROUP BY clause) based on a condition applied to aggregate functions or grouped column values.
+
+    * Used with GROUP BY: The HAVING clause is used in conjunction with the GROUP BY clause to filter groups of rows after they have been aggregated.
+
+    * Example:
+        ```
+        SELECT column1, COUNT(*) as count
+        FROM table_name
+        GROUP BY column1
+        HAVING count > 5;
+        ```
+
+    * Usage: You use the HAVING clause when you want to filter groups of rows based on aggregate calculations (e.g., COUNT, SUM, AVG) or when you need to filter results after grouping.
+
+In summary, the main difference is that the WHERE clause filters individual rows based on column values before any grouping or aggregation, while the HAVING clause filters groups of rows based on aggregated values or grouped column values after grouping has occurred. Typically, you use the WHERE clause when working with non-aggregated data, and you use the HAVING clause when working with grouped and aggregated data in Hive queries.
 
 ----------------------------------------------
 
