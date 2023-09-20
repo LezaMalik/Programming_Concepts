@@ -899,6 +899,56 @@ To leverage the benefits of bucketing, you need to ensure that your data is prop
 ----------------------------------------------
 
 ### How do you enable dynamic partitioning in Hive?
+Dynamic partitioning in Hive allows you to create partitions in a table dynamically based on the values present in one or more columns of the data being inserted into the table. This feature simplifies the process of managing partitions and is particularly useful when dealing with large and evolving datasets. 
+
+To enable dynamic partitioning in Hive, you need to follow these steps:
+
+1. Enable Dynamic Partitioning in Hive Configuration:
+
+    Dynamic partitioning should be enabled in Hive's configuration settings. You can set the following properties in Hive to enable dynamic partitioning:
+
+        * hive.exec.dynamic.partition: Set this property to true to enable dynamic partitioning for static partitions.
+        * hive.exec.dynamic.partition.mode: Set this property to either "strict" or "nonstrict" based on your requirements. "Strict" mode enforces that at least one partition column must have a constant value, whereas "nonstrict" allows dynamic partitioning without constant values.
+    You can set these properties using the SET command in the Hive session or configure them in your Hive configuration file (e.g., hive-site.xml).
+
+    Example (in Hive session):
+    ```
+    SET hive.exec.dynamic.partition=true;
+    SET hive.exec.dynamic.partition.mode=nonstrict;
+    ```
+
+2. Specify the Partition Columns:
+
+    When creating your table, specify the columns that will be used for partitioning by using the PARTITIONED BY clause in your CREATE TABLE statement. These columns should be included in the table's schema.
+
+    Example:
+
+    ```
+    CREATE TABLE dynamic_partitioned_table (
+    id INT,
+    name STRING
+    )
+    PARTITIONED BY (date STRING, country STRING);
+    ```
+
+    In this example, the dynamic_partitioned_table is partitioned by the date and country columns.
+
+3. Use Dynamic Partitioning in INSERT Statements:
+
+    When inserting data into the partitioned table, use the INSERT OVERWRITE or INSERT INTO statement with the PARTITION clause. Specify the partition values using the PARTITION clause, and Hive will automatically create the necessary partitions if they don't already exist.
+
+    Example:
+
+    ```
+    INSERT INTO TABLE dynamic_partitioned_table PARTITION (date='2023-09-20', country='US')
+    SELECT id, name FROM source_data WHERE date='2023-09-20' AND country='US';
+    ```
+    In this example, data is inserted into a specific partition of dynamic_partitioned_table.
+
+4. Run the Query:
+    Execute the query, and Hive will create partitions as needed and insert the data into the appropriate partition.
+
+Dynamic partitioning simplifies the process of managing partitions, especially when dealing with large and evolving datasets. It allows you to insert data into partitions without having to explicitly create each partition beforehand. Make sure to set the appropriate Hive configuration properties, specify partition columns, and use the PARTITION clause in your INSERT statements to take advantage of dynamic partitioning in Hive.
 
 ----------------------------------------------
 
