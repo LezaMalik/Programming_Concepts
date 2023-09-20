@@ -794,17 +794,112 @@ You can run a Hive query from the command line by using the hive command-line in
     ```
 3. Execute the Query: 
     After entering your query, press Enter. Hive will process the query and display the results if it's a SELECT query or provide status updates for other types of queries.
+
+4. Exit the Hive CLI: Once you've finished running your queries, you can exit the Hive CLI by typing ```quit;```
 ----------------------------------------------
 
 ### How do you perform a JOIN operation in Hive?
+In Hive, you can perform JOIN operations to combine data from two or more tables based on a common column or columns. Hive supports various types of JOINs, including INNER JOIN, LEFT JOIN (also known as LEFT OUTER JOIN), RIGHT JOIN (also known as RIGHT OUTER JOIN), and FULL JOIN (also known as FULL OUTER JOIN), which are similar to SQL JOIN operations.
+
+Here's a basic syntax for performing JOIN operations in Hive:
+
+```
+SELECT *
+FROM table1
+JOIN table2
+ON table1.column_name = table2.column_name;
+```
+
+Let's break down the process of performing a JOIN in Hive:
+
+1. Choose the Tables: Select the tables you want to join (e.g., table1 and table2 in the example).
+
+2. Specify the JOIN Type: Determine the type of JOIN you want to perform (INNER, LEFT, RIGHT, or FULL) based on your requirements. Each type of JOIN has different behavior:
+
+    * INNER JOIN: Returns only the rows that have matching values in both tables.
+    * LEFT JOIN (LEFT OUTER JOIN): Returns all rows from the left table and the matched rows from the right table. If there's no match in the right table, NULL values are included.
+    * RIGHT JOIN (RIGHT OUTER JOIN): Returns all rows from the right table and the matched rows from the left table. If there's no match in the left table, NULL values are included.
+    * FULL JOIN (FULL OUTER JOIN): Returns all rows when there is a match in either the left or right table. If there's no match in either table, NULL values are included.
+
+3. Specify the JOIN Condition: Use the ON clause to specify the columns on which you want to join the tables. This condition defines how the tables are related.
+
+4. Select Columns and Specify Additional Conditions (Optional): You can select specific columns from the joined tables and specify additional filtering conditions in the WHERE clause if needed.
+
+5. Example:
+    ```
+    //Inner Join
+
+    SELECT *
+    FROM orders
+    JOIN customers
+    ON orders.customer_id = customers.customer_id;
+
+
+    //Left Join
+
+    SELECT *
+    FROM employees
+    LEFT JOIN departments
+    ON employees.department_id = departments.department_id;
+
+
+    //Right Join
+
+    SELECT *
+    FROM departments
+    RIGHT JOIN employees
+    ON departments.department_id = employees.department_id;
+
+
+    //Full Join
+
+    SELECT *
+    FROM sales
+    FULL JOIN customers
+    ON sales.customer_id = customers.customer_id;
+
+    ```
 
 ----------------------------------------------
 
 ### What is the purpose of the Hive bucketing feature?
+Hive bucketing is a feature that provides a way to organize data within Hive tables for improved query performance and data management. The primary purpose of the Hive bucketing feature is to optimize data storage and retrieval in Hive by partitioning data into a specified number of buckets based on the values of one or more columns. 
+
+This feature serves several important purposes:
+
+* Data Organization: Bucketing helps organize data into smaller, more manageable partitions, improving data locality and access patterns. It ensures that similar data values are grouped together within buckets.
+
+* Data Distribution: Hive bucketing can evenly distribute data across buckets, which is particularly useful for distributing data evenly across nodes in a Hadoop cluster. This helps in parallel processing and can improve query performance.
+
+* Reduced Data Skew: By distributing data uniformly across buckets, bucketing can help reduce data skew, which occurs when certain values are significantly more common than others. Skewed data can lead to performance bottlenecks during query execution.
+
+* Optimized Joins: Bucketed tables are more efficient for joins, especially for equi-joins (joins based on equality conditions) involving the bucketed columns. Hive can perform bucket-to-bucket joins more efficiently, as it knows that matching buckets contain related data.
+
+* Sampling: Bucketing can enable more efficient data sampling since each bucket represents a roughly equal portion of the data. This is valuable for query optimization and analytics.
+
+* Predicate Pushdown: Hive can use predicate pushdown optimization when querying bucketed tables. This means that Hive can skip reading entire buckets that don't contain relevant data based on filter conditions, further improving query performance.
+
+* Dynamic Pruning: With Hive's dynamic partition pruning capabilities, queries can skip reading entire partitions (which correspond to buckets) based on filter predicates, further reducing I/O and improving query response times.
+
+Here's an example of how to create a bucketed table in Hive:
+
+```
+CREATE TABLE bucketed_table (
+  id INT,
+  name STRING
+)
+CLUSTERED BY (id) INTO 4 BUCKETS;
+
+```
+In this example, a table named bucketed_table is created with two columns, and it is clustered (bucketed) by the id column into 4 buckets. This means that data will be distributed into 4 buckets based on the values of the id column.
+
+To leverage the benefits of bucketing, you need to ensure that your data is properly bucketed when inserting or loading data into the table, and that your queries take advantage of the bucketing for optimal performance. Bucketing is particularly valuable when working with large datasets and performing complex queries in Hive.
+
 
 ----------------------------------------------
 
 ### How do you enable dynamic partitioning in Hive?
+
 ----------------------------------------------
 
 ### What is the difference between the WHERE clause and HAVING clause in Hive?
