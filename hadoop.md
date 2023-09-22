@@ -646,7 +646,7 @@ Creating a table in Hive involves defining the table's schema and specifying its
 
 ----------------------------------------------
 
-### What is the difference between an external table and a managed table in Hive?
+### 26. What is the difference between an external table and a managed table in Hive?
 
 1. Managed Table:
 
@@ -691,7 +691,7 @@ In summary, the key differences between managed tables and external tables in Hi
 
 ----------------------------------------------
 
-### How do you load data into a Hive table from a file?
+### 27. How do you load data into a Hive table from a file?
 
 You can load data into a Hive table from a file using various methods and HiveQL statements. The method you choose depends on the format of your data file and whether you're working with a managed or external table. Here are some common ways to load data into a Hive table:
 
@@ -753,7 +753,7 @@ The method you choose will depend on whether you're working with managed or exte
 
 ----------------------------------------------
 
-### What is the purpose of the Hive SerDe?
+### 28. What is the purpose of the Hive SerDe?
 
 The Hive SerDe (Serializer/Deserializer) plays a crucial role in Hive when it comes to handling different data formats. It serves as an interface between Hive and various data formats, allowing Hive to read, write, and process data in different structures and encodings. The primary purpose of a Hive SerDe is to facilitate the mapping of data between Hive tables and external data sources, which can have diverse formats, including CSV, JSON, Avro, Parquet, and more. 
 
@@ -779,7 +779,7 @@ In summary, the Hive SerDe is a critical component that bridges the gap between 
 
 ----------------------------------------------
 
-### How do you run a Hive query from the command line?
+### 29. How do you run a Hive query from the command line?
 
 You can run a Hive query from the command line by using the hive command-line interface (CLI). Here are the steps to run a Hive query from the command line:
 
@@ -798,7 +798,7 @@ You can run a Hive query from the command line by using the hive command-line in
 4. Exit the Hive CLI: Once you've finished running your queries, you can exit the Hive CLI by typing ```quit;```
 ----------------------------------------------
 
-### How do you perform a JOIN operation in Hive?
+### 30. How do you perform a JOIN operation in Hive?
 In Hive, you can perform JOIN operations to combine data from two or more tables based on a common column or columns. Hive supports various types of JOINs, including INNER JOIN, LEFT JOIN (also known as LEFT OUTER JOIN), RIGHT JOIN (also known as RIGHT OUTER JOIN), and FULL JOIN (also known as FULL OUTER JOIN), which are similar to SQL JOIN operations.
 
 Here's a basic syntax for performing JOIN operations in Hive:
@@ -862,7 +862,7 @@ Let's break down the process of performing a JOIN in Hive:
 
 ----------------------------------------------
 
-### What is the purpose of the Hive bucketing feature?
+### 31. What is the purpose of the Hive bucketing feature?
 Hive bucketing is a feature that provides a way to organize data within Hive tables for improved query performance and data management. The primary purpose of the Hive bucketing feature is to optimize data storage and retrieval in Hive by partitioning data into a specified number of buckets based on the values of one or more columns. 
 
 This feature serves several important purposes:
@@ -898,7 +898,7 @@ To leverage the benefits of bucketing, you need to ensure that your data is prop
 
 ----------------------------------------------
 
-### How do you enable dynamic partitioning in Hive?
+### 32. How do you enable dynamic partitioning in Hive?
 Dynamic partitioning in Hive allows you to create partitions in a table dynamically based on the values present in one or more columns of the data being inserted into the table. This feature simplifies the process of managing partitions and is particularly useful when dealing with large and evolving datasets. 
 
 To enable dynamic partitioning in Hive, you need to follow these steps:
@@ -952,7 +952,7 @@ Dynamic partitioning simplifies the process of managing partitions, especially w
 
 ----------------------------------------------
 
-### What is the difference between the WHERE clause and HAVING clause in Hive?
+### 33. What is the difference between the WHERE clause and HAVING clause in Hive?
 In Hive, the WHERE clause and HAVING clause are both used to filter rows in a query, but they serve different purposes and are applied at different stages of query processing. Here are the key differences between the two:
 
 1. WHERE Clause:
@@ -991,7 +991,7 @@ In summary, the main difference is that the WHERE clause filters individual rows
 
 ----------------------------------------------
 
-### How can you insert data into a Hive table from the result of a query?
+### 34. How can you insert data into a Hive table from the result of a query?
 You can insert data into a Hive table from the result of a query using the INSERT INTO statement. This allows you to populate a table with the results of a SELECT query or the output of another table. Here's the basic syntax to achieve this in Hive:
 
 ```
@@ -1031,3 +1031,44 @@ WHERE condition;
 This method is useful when you want to transform or filter data from one table and insert it into another table or partition within Hive, allowing you to perform various data processing and manipulation tasks.
 
 ----------------------------------------------
+
+### 35. What is Sqoop
+
+----------------------------------------------
+
+### 36. What are some use cases for sqoop?
+
+----------------------------------------------
+
+### 37. how to import data from RDBMS into HDFS using sqoop?
+
+----------------------------------------------
+
+### 38. Explain the difference between 'free-form query import' and 'import table' in Sqoop.
+
+----------------------------------------------
+
+### 39. What is the purpose of the --target-dir option in Sqoop?
+
+----------------------------------------------
+
+### 40. How do you export data from HDFS to a relational database using Sqoop?
+
+----------------------------------------------
+
+### 41. What is the Sqoop metastore and why is it used?
+
+----------------------------------------------
+
+### 42. How do you schedule recurring data transfer jobs in Sqoop?
+
+----------------------------------------------
+
+### 43. What is the purpose of the --direct option in Sqoop?
+
+----------------------------------------------
+
+### 44. Explain the difference between Sqoop and Flume.
+
+----------------------------------------------
+
