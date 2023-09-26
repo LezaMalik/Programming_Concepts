@@ -9,7 +9,7 @@ CAP theory, also known as the CAP theorem, is a fundamental concept in distribut
 The CAP theorem states that in a distributed system, you can have at most two out of the following three guarantees simultaneously:
 
 1. Consistency (C): All nodes in the system see the same data at the same time. In other words, every read operation will return the most recent write.
-
+ 
 2. Availability (A): Every request made to the system receives a response, without guaranteeing that it contains the most recent version of the data. In other words, the system remains operational and responsive to client requests.
 
 3. Partition Tolerance (P): The system continues to function even in the presence of network partitions or communication failures between nodes. In a distributed system, network partitions can occur when some nodes are unable to communicate with others.
