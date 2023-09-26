@@ -1032,7 +1032,21 @@ This method is useful when you want to transform or filter data from one table a
 
 ----------------------------------------------
 
-### 35. What is Sqoop
+### 35. What is Sqoop?
+
+Sqoop is a command-line tool and framework for transferring data between Apache Hadoop and relational databases or data warehouses. It is commonly used in the context of big data processing and analytics to facilitate the import and export of data between Hadoop and external data sources.
+
+The main purposes of Sqoop are:
+
+1. Data Ingestion: Sqoop allows you to import data from relational databases (such as MySQL, Oracle, PostgreSQL, SQL Server) into Hadoop Distributed File System (HDFS) or Hive tables. This is useful for processing and analyzing large volumes of structured data using Hadoop-based tools like MapReduce or Hive.
+
+2. Data Export: Conversely, Sqoop can also export data from Hadoop back to relational databases. This is helpful when you want to store the results of your Hadoop processing in a traditional database for reporting or other purposes.
+
+3. Data Transformation: Sqoop can perform basic transformations during data transfer, such as handling data types mapping, filtering rows, and splitting data into multiple HDFS files.
+
+4. Parallel Data Transfer: Sqoop can parallelize data transfers, allowing for faster import and export of data by distributing the workload across multiple mappers in the Hadoop cluster.
+
+Sqoop is particularly valuable in big data ecosystems where you need to combine or move data between traditional databases and Hadoop for analysis, reporting, or archival purposes. It simplifies the process of transferring data and provides a convenient way to integrate Hadoop with existing data storage and processing systems.
 
 ----------------------------------------------
 
