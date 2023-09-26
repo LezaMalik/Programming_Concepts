@@ -1155,6 +1155,63 @@ To import data from a relational database management system (RDBMS) into the Had
 
 ### 38. Explain the difference between 'free-form query import' and 'import table' in Sqoop.
 
+In Sqoop, there are two primary ways to import data from a relational database into HDFS: "free-form query import" and "import table." These methods have distinct characteristics and use cases:
+
+1. **Import Table:**
+
+    * Use Case: 
+        * Importing an entire table from a relational database into HDFS. This method is suitable when you want to transfer all the data from a specific table, without complex transformations or filtering.
+
+    * Advantages:
+        * Simple and straightforward to use.
+        * Well-suited for one-time or periodic data transfers.
+        * Minimal configuration required.
+
+    * Limitations:
+        * Limited flexibility for customizing the import process.
+        * All columns and rows from the specified table are imported.
+
+
+2. **Free-Form Query Import:**
+
+    * Use Case: 
+        * Importing data from a relational database into HDFS using a custom SQL query. This method is more flexible and powerful than importing entire tables because it allows you to perform complex transformations, filtering, and join operations during the import process.
+    
+    * Advantages:
+        * Offers flexibility to import specific columns, apply filtering conditions, and perform custom transformations.
+        * Useful for complex data import scenarios where you need to join multiple tables or aggregate data.
+
+    * Limitations:
+        * Requires you to write a custom SQL query, which may be more complex to create and maintain.
+        * Typically slower than "import table" because it involves executing custom SQL queries.
+
+**Key Differences:** 
+
+1. Scope:
+
+    1. "Import Table" imports all rows and columns from a specific table.
+    2. "Free-Form Query Import" allows you to define a custom SQL query to import data selectively, join tables, or apply transformations.
+
+2. Flexibility:
+
+    1. "Import Table" is less flexible and suitable for straightforward, whole-table imports.
+    2. "Free-Form Query Import" provides more flexibility for complex data extraction and manipulation tasks.
+
+3. Performance:
+
+    1. "Import Table" is generally faster because it directly transfers data from the table to HDFS.
+    2. "Free-Form Query Import" may be slower due to the additional processing required for custom SQL queries.
+
+4. Complexity:
+
+    1. "Import Table" is simpler to use and requires minimal SQL knowledge.
+    2. "Free-Form Query Import" requires you to craft custom SQL queries, which can be more complex.
+
+
+In summary, the choice between "import table" and "free-form query import" depends on your specific data import requirements. If you need to import entire tables without complex transformations, "import table" is a straightforward choice. 
+
+However, if you require more control over the data extraction process, including filtering, custom transformations, or joins, "free-form query import" is the preferred option despite its added complexity.
+
 ----------------------------------------------
 
 ### 39. What is the purpose of the --target-dir option in Sqoop?
