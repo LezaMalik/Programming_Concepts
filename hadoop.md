@@ -2,7 +2,7 @@
 
 *Following are some of the important Hadoop concepts.*
                               
-                                              
+                                                 
 ### 1. What is CAP theory?
 CAP theory, also known as the CAP theorem, is a fundamental concept in distributed computing and database systems. It was formulated by computer scientist Eric Brewer in 2000 and is often used to describe the trade-offs that exist in designing and operating distributed systems.
  
