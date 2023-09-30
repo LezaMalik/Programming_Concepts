@@ -1,6 +1,6 @@
 # Basic Hadoop Concepts
          
-*Following are some of the important Hadoop concepts.*
+*Following are some of the important Hadoop concepts.*   
                                               
                                                        
 ### 1. What is CAP theory?
