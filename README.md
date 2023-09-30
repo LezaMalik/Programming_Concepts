@@ -1,5 +1,5 @@
 ## Programming Concepts
-Following are some of the important concepts of programming with detailed explanation and snapshots.
+Following are some of the important concepts of programming with detailed explanation.
 
 
 
