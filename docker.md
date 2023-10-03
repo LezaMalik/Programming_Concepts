@@ -1,7 +1,7 @@
 # Basic Docker Concepts
         
 *Following are some of the important Docker concepts.*
-                                          
+                                            
 ### 1. What is Docker? 
 Docker is a platform and set of tools designed to simplify the creation, deployment, and management of applications and their dependencies in lightweight, portable containers. Containers are standalone, executable packages that include everything needed to run a piece of software, including the code, runtime, libraries, and system tools. Docker allows you to package your application and its dependencies into a single container image, ensuring consistency and reproducibility across different environments.
 
