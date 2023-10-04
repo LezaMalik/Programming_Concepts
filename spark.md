@@ -33,6 +33,9 @@ Key features and components of Apache Spark include:
 Apache Spark is widely adopted in industries such as finance, healthcare, e-commerce, and more, where large-scale data processing and analytics are essential. Its combination of speed, versatility, and ease of use has made it a popular choice for big data analytics and machine learning workloads.
 
 
+
+![spark1 picture](./assets/spark1.png)
+
 ----------------------------------------------
 
 ### 2. What are the componets of Apache Spark?
