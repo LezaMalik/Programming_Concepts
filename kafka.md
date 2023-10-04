@@ -32,6 +32,9 @@ Key features and concepts of Kafka include:
 
 * Security: Kafka supports various security features, including authentication, authorization, encryption, and data protection.
 
+
+![kafka picture](./assets/kafka.png)
+
 ----------------------------------------------
 
 
@@ -116,5 +119,7 @@ Here are the main components of Apache Kafka:
     * Kafka provides client libraries for different programming languages, including Java, Python, Scala, and others, to develop producers, consumers, and custom applications that interact with Kafka clusters.
 
 These components work together to form a distributed data streaming platform that is highly scalable, fault-tolerant, and capable of handling real-time data ingestion, processing, and distribution. Kafka's architecture is designed to support a wide range of use cases, from log aggregation and event sourcing to real-time analytics and data integration.
+
+![kafka-arch picture](./assets/kafka-arch.png)
 
 ----------------------------------------------
