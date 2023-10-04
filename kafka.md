@@ -1,7 +1,7 @@
 # Basic Kafka Concepts
 
 *Following are some of the important Kafka concepts.*
-   
+     
 ### 1. What is Apache Kafka?
 
 Apache Kafka is an open-source, distributed streaming platform designed for building real-time, data-intensive, and scalable applications. Originally developed by LinkedIn and later contributed to the Apache Software Foundation, Kafka is widely used for ingesting, processing, and transmitting high volumes of data in a fault-tolerant and low-latency manner.
