@@ -1,7 +1,7 @@
 # Basic Cloud Concepts  
     
 *Following are some of the important Cloud concepts.*
-  
+    
 ### 1. What is Cloud Computing?
 Cloud computing is a technology paradigm that involves the delivery of computing services over the internet. Instead of owning and managing physical hardware and infrastructure, individuals and organizations can rent or lease computing resources, such as servers, storage, databases, networking, software, and more, from cloud service providers. These cloud services are hosted and managed by the providers in data centers distributed around the world.
 
