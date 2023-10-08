@@ -1,5 +1,5 @@
 # Basic Cloud Concepts  
-        
+          
 *Following are some of the important Cloud concepts.*
       
 ### 1. What is Cloud Computing?
