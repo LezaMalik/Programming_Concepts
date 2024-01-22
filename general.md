@@ -3,7 +3,7 @@
 *Following are some of the important general programming concepts.*
 
 
-### 1. What's ASCII?
+### 1. What's ASCII?    
 ASCII (American Standard Code for Information Interchange) is a character encoding standard that assigns a unique 7-bit binary number to each alphanumeric character, punctuation mark, and control character used in English text. It was widely used in early computer systems and communication protocols.
 
 Characters in ASCII encoding include upper and lowercase letters A through Z, numerals 0 through 9 and basic punctuation symbols. It also uses some non-printing control characters that were originally intended for use with teletype printing terminals.
